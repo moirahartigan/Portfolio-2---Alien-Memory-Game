@@ -7,6 +7,31 @@ This is a flip card memory game.
 
 <img src="">
 
+# Table of Contents
++ [User Experience](#user-experience)
+  + [User Stories](#user-stories)
+  + [Design](#design)
+    + [Overall Feel](#overall-feel)
+    + [Color Scheme](#color-scheme)
+    + [Typography](#typography)
+    + [Sound](#sound)
+  + [Wireframes](#wireframes)
++ [Features](#features)
+  + [Current Features](#current-features)
+  + [Future Features](#future-features)
++ [Technologies Used](#technologies-used)
+  + [Languages Used](#languages-used)
+  + [Frameworks Libraries and Programmes Used](#frameworks-libraries-and-programmes-used)
++ [Testing](#testing)
+  + [Validator Testing](#validator-testing)
+  + [Lighthouse Testing](#lighthouse-testing)
++ [Deployment](#deployment)
+  + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
++ [Credits](#credits)
+  + [Code](#code)
+  + [Media](#media)
+  + [Acknowledgements](#acknowledgements)
+  
 ***
 ***
 # User Experience
@@ -116,7 +141,7 @@ This site was deployed through GitHub Pages using the following steps:
 * Then under "Source" click the "None" dropdown and select the "Main" branch
 * Click the save button.
 * The page will update and at the top it will say: "Your site is ready to be published at
-* (https://moirahartigan.github.io/Ms1-Schools-Out-Childcare/)
+* (https:)
 
 ***
 ***
