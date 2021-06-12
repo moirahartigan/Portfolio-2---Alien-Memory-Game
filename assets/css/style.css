@@ -11,24 +11,43 @@ body {
 font-family: 'Amatic-sc', sans-serif;
 }
 
-
-.memory-game, .memory-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-   
+.game-board {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A1887F;
+    border-radius: 0.3em;
+    box-shadow: 0 5px 5px #808080;
 }
- background-color: rgba(196,103,41,0.2);
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin-top: 0.5em;
+
+.game-grid-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.game-card {
+    width: 4.5em;
+    height: 4.5em;
+    background: url(../images/cardback.jpg);
+    border-radius: 0.3em;
+    margin: 0.8em;
+    box-shadow: 2px 0 10px #212121;
+    cursor: pointer;
+}
+
+.game-card-img {
+    visibility: hidden;
+    object-fit: cover;
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.restart-button-div {
+    max-width: 50%;
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+.restart-button { 
+	padding: 0.7em 1.4em;
+}
