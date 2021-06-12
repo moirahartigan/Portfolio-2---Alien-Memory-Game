@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&display=swap');
 
 /* basic styling */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: 'Amatic-sc', sans-serif;
-}
 
 * {
     padding: 0;
@@ -20,7 +11,8 @@ font-family: 'Amatic-sc', sans-serif;
   body {
     height: 100vh;
     display: flex;
-    background: #060AB2;
+    font-family: 'Amatic-sc', sans-serif;
+    background-image: url('../images/background-sky.jpg');
   }
   
   .memory-game {
@@ -48,7 +40,7 @@ font-family: 'Amatic-sc', sans-serif;
   .card-back {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     position: absolute;
     border-radius: 5px;
     background: #1C7CCC;
