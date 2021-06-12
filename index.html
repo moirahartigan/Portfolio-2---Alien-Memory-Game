@@ -1,105 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Memory card flip game with an Alien theme">
-    <meta name="keywords" content="memory game, flip card memory game, flip card game, game, flip card">
-    <meta name="author" content="Moira Hartigan">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memory card flip game with an Alien theme">
+  <meta name="keywords" content="memory game, flip card memory game, flip card game, game, flip card">
+  <meta name="author" content="Moira Hartigan">
 
   <!-- style sheets -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Alien Memory</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>Alien Memory</title>
 </head>
+
 <body>
-  
-   <!-- Memory game grid -->
-   <section class="memory-game">
-    <div class="memory-card">
-      <img class="card-front" src="assets/images/monster-1.jpg" alt="monster-1">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-1.jpg" alt="monster-1">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-2.jpg" alt="monster-2">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-2.jpg" alt="monster-2">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front image-hidden" src="assets/images/monster-3.jpg" alt="monster-3">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-3.jpg" alt="monster-3">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-4.jpg" alt="monster-4">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-4.jpg" alt="monster-4">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-5.jpg" alt="monster-5">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-5.jpg" alt="monster-5">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-6.jpg" alt="monster-6">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-6.jpg" alt="monster-6">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
 
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-7.jpg" alt="monster-7">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
+  <main>
+    <section>
+      <div class="game-status-details">
+        <span class="move-counter" id="moveCounter"></span>
+        <span class="timer" id="timer">0 mins 0 secs</span>
+        <button class="restart-btn" id="restartBtn" onClick="startGame()" aria-label="restart game">↻</button>
+      </div>
+      <table class="game-board">
+        <tbody class="game-grid">
+          <tr class="game-grid-row">
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-1.jpg" alt="Monster1">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-2.jpg" alt="Monster2">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-3.jpg" alt="Monster3">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-4.jpg" alt="Monster4">
+            </td>
+          </tr>
+          <tr class="game-grid-row">
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-5.jpg" alt="Monster5">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-6.jpg" alt="Monster6">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-7.jpg" alt="Monster7">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-8.jpg" alt="Monster8">
+            </td>
+          </tr>
+          <tr class="game-grid-row">
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-1.jpg" alt="Monster1">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-2.jpg" alt="Monster2">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-3.jpg" alt="Monster3">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-4.jpg" alt="Monster4">
+            </td>
+          </tr>
+          <tr class="game-grid-row">
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-5.jpg" alt="Monster5">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-6.jpg" alt="Monster6">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-7.jpg" alt="Monster7">
+            </td>
+            <td class="game-card">
+              <img class="game-card-img" src="assets/images/monster-8.jpg" alt="Monster8">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="restart-button-div">
+        <button class="restart-button brown-button" id="restartButton" onClick="startGame()">Restart ↻</button>
+      </div>
+    </section>
 
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-7.jpg" alt="monster-7">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-8.jpg" alt="monster-8">
-      <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-
-    <div class="memory-card">
-        <img class="card-front" src="assets/images/monster-8.jpg" alt="monster-8">
-        <img class="card-back" src="assets/images/blank2.jpg" alt="Blank Card">
-    </div>
-  </section>
- 
+    
 
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
