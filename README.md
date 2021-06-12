@@ -1,59 +1,113 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Alien Memory
+## Portfolio Project 2: _Interactive Front-End Development_** 
+This is a flip card memory game.
+## Demo
 
-Welcome moirahartigan,
+[View the Live Website Here](https://moirahartigan.github.io//)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+<img src="">
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+# User Experience
 
-A blue button should appear to click: _Make Public_,
+### User Stories
+* 
+* 
+* 
+* 
+* 
 
-Another blue button should appear to click: _Open Browser_.
+### Strategy
+#### Site Owners Goals 
+ 
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Scope
+As my skillset is at a beginner stage, I have taken a "Minimal Viable Product" approach to this project and I have created a clean single page site which can be easily navigated either by scrolling through each section or by clicking on the links on the navigation bar.  
+### Structure
+The Game is a single page site broken down into the following sections:
 
-A blue button should appear to click: _Make Public_,
+#### <em>Game Sections:</em>
+* #### Home - 
+  *  
+  * 
+  * 
+ <br>
+<p align="center">
+<img src="">
+</p>
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ * #### Navigation bar - 
+   * 
+<br>
 
-To log into the Heroku toolbelt CLI:
+<p align="center">
+  <img src=""> 
+ </p> 
+ 
+ <br>
+ 
+ 
+<p align="center">
+  <img src="">
+    </p>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
 
-## Updates Since The Instructional Video
+  
+ * #### 404 Error -
+   * A 404 error page has been added to redirect users back to the home page.
+<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<p align="center">
+  <img src="">
+    </p>
+<br>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### <em>Game Flow</em>
+The flow of the site is simple and makes the logical linear progression from : Our Philosophy --> Services --> Contact us.
+The user might choose their own route through the page, but the site has been designed to try and maintain their focused interest throughout the journey towards the end goal of completing the contact form and make an enquiry. A call to action button has been added to both the home page, and the services page to allow the user to go directly to the contact section if they wish.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Skeleton
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### <em>Wireframes</em>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+All Wireframes were designed for laptop/computer, iPad/tablet and phone display. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+[Wireframe for Mobile](https:)    
+[Wireframe for Tablet](https:)  
+[Wireframe for Desktop](https://github.com/moirahartigan/)  
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Surface
+#### <em>Colour Scheme</em>
+I chose a simple colour palette to allow the focus to be on the images and the information provided. The background colour alternates between a plain white background and an image. I applied an dark gradient overlay to each background image used throughout the site. This was done to avoid distraction and to draw the users eye to the information sitting on the images. I used the below colours to highlight the navigation links and call to action buttons on the landing page, the services page and the contact page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Palette:
+                                                                                                      
+<p align="center">                                                                                           
+ <img src="">
+</p>
+                                                                                                                   
+#### <em>Typography</em>
+The font-families chosen are Poppins and Lora. For consistency I used Poppins for headings and titles and Lora was used for the sub heading of services and Find us.
+#### <em>Imagery</em>
+Imagery plays a very important part in the design for this website. I chose bright colourful images that complimented each other on the page while highlighting a fun and enjoyable care service.  
 
----
+# Features
+### Current Features
++ This is a one page game.
++ 
++ 
++ 
++ 
 
-Happy coding!
+### Future Features
++ 
++ 
++ 
++ 
+***
