@@ -12,11 +12,12 @@ This is a flip card memory game.
 # User Experience
 
 ### User Stories
-* 
-* 
-* 
-* 
-* 
+* The user should see a grid style game with 16 cards on display - these cards will have a front and back face.
+* The user should be able to click any of the cards which are facing down (not yet flipped) to flip over and try to find a matched pair.
+* The user should be able to find the matched pairs by clicking on the cards. If they click two cards and these cards are the same, they match, and the cards remain in thier flipped position , if they don't match they revert back to their previous position of facing down and the user must try again.
+* The user should not be able to click on a new card until the previous selected cards have returned to their position of face down.
+* The user should be receiving an interactive message at the end of the game when all matched pairs have been found. This message will display the number of moves and the time taken to win the game. 
+* The user should be able to close the pop up message at the end of the game with a click on the "Replay" button.
 
 ### Strategy
 #### Site Owners Goals 
