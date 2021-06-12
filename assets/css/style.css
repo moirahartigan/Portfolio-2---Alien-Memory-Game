@@ -29,12 +29,14 @@
     height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);   
   }
 
+  .memory-card:active {
+    transform: scale(.95);
+    transition: transform .2s;
+
+  }
   
   .card-front,
   .card-back {
@@ -43,8 +45,9 @@
     padding: 10px;
     position: absolute;
     border-radius: 5px;
-    background: #1C7CCC;
+    background: #2376b9;
     backface-visibility: hidden;
+    border-radius: 10px;
   }
   
   .card-front {
