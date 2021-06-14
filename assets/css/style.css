@@ -1,77 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&display=swap');
 
-/* basic styling */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-
-  body {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    font-family: 'Amatic-sc', sans-serif;
-    background-image: url('../images/background-sky.jpg');
-  }
-
-  h1 {
-    font-size:'Amatic-sc', sans-serif;
-    color:cornsilk;
-    text-transform: uppercase;
-    text-align:center;
-    margin:10px;
-    display: block
-  }
-
-
-.header { 
-  text-align: center;
-  border-radius: 20px;
-  border: 5px solid #2376b9;
-  margin: 50px;
-  width: 100%;
-  padding: 20px;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic-sc', sans-serif;
+  box-sizing: border-box;
 }
 
-  .memory-game {
-    width: 89vh;
-    height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
-    position:relative;
-    top:200px;
-  }
 
-  .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
-    position: relative;
-    transform: scale(1);   
-  }
+html {
+  min-height: 100vh;
+  font-family:'Amatic-sc', sans-serif;
+}
 
-  .memory-card:active {
-    transform: scale(.95);
-    transition: transform .2s;
+body {
+  margin: 0;
+  background-image: url('../images/background-sky.jpg');
+}
 
-  }
-  
-  .card-front,
-  .card-back {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    position: absolute;
-    border-radius: 5px;
-    background: #2376b9;
-    backface-visibility: hidden;
-    border-radius: 10px;
-  }
-  
- 
+.page-title {
+  color: #ff5100;
+  font-family: 'Amatic-sc', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+/* https://stackoverflow.com/questions/47319464/make-a-grid-column-span-the-entire-row */
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #FFBB89;
+  font-size: 2em;
+}
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.memory-card {
+  position: relative;
+  cursor: pointer;
+  height: 175px;
+  width: 125px;
+}
+
+.card-front {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
