@@ -1,12 +1,13 @@
 // Memory card game logic
-const cards = document.querySelectorAll('.memory-card')
-let firstClick = false
-let cardPair = []
+const cards = document.querySelectorAll('.memory-card');
 
-cards.forEach((card)=>{
-    card.state ='unclicked'
+function flipCard() {
+    this.classList.toggle('flip');
+}
 
-})
+cards.forEach(card => card.addEventListener('click', flipCard)); 
+
+
 
 
 function matched() {

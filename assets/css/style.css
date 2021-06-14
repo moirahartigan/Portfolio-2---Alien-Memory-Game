@@ -43,7 +43,7 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: center;
-  perspective: 500px;
+  perspective: 1000px;
 }
 
 .memory-card {
@@ -52,6 +52,7 @@ body {
   height: 100px;
   width: 100px;
   transform: scale(1);
+  transform-style: preserve-3d;
 }
 /* need to fix bug of border showing properly change seudo class to active instead to give a zoom effect*/
 .memory-card:active {
