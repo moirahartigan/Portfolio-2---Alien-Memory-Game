@@ -8,20 +8,44 @@
     box-sizing: border-box;
   }
   
+
   body {
     height: 100vh;
+    width: 100%;
+    text-align: center;
     display: flex;
     font-family: 'Amatic-sc', sans-serif;
     background-image: url('../images/background-sky.jpg');
   }
-  
+
+  h1 {
+    font-size:'Amatic-sc', sans-serif;
+    color:cornsilk;
+    text-transform: uppercase;
+    text-align:center;
+    margin:10px;
+    display: block
+  }
+
+
+.header { 
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid #2376b9;
+  margin: 50px;
+  width: 100%;
+  padding: 20px;
+}
+
   .memory-game {
     width: 89vh;
     height: 60%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
-  
+    padding: 20px;
+    margin: 20px;
+    position:relative;
+    top:200px;
   }
 
   .memory-card {
