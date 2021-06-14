@@ -1,8 +1,12 @@
 // Memory card game logic
-function flipcard() {
- 
-}
+const cards = document.querySelectorAll('.memory-card')
+let firstClick = false
+let cardPair = []
 
+cards.forEach((card)=>{
+    card.state ='unclicked'
+
+})
 
 
 function matched() {
@@ -26,6 +30,6 @@ function shuffle() {
 
 
 function reset() {
-    
+
 }
 
