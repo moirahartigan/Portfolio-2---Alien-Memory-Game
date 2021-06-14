@@ -49,11 +49,16 @@ body {
 .memory-card {
   position: relative;
   cursor: pointer;
-  height: 175px;
-  width: 125px;
+  height: 100px;
+  width: 100px;
 }
+/* need to fix bug of border showing properly */
+.memory-card:hover {
+  box-shadow: inset 2px 2px 2px 10px white;
+  box-sizing: border-box;
+} 
 
-.card-front {
+.card-front, .card-back {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -66,4 +71,6 @@ body {
   overflow: hidden;
   transition: transform 500ms ease-in-out;
   backface-visibility: hidden;
+  
 }
+
