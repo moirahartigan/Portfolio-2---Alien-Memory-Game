@@ -7,62 +7,63 @@ let hasFlippedCard = false; //used to check if card has already been clicked
 let firstCard, secondCard; //Used to check for cards match
 /*
 onclick function for cards, toggles flip class for css effects
-initial code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
+code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
 */
 function flipCard() {
-   
-    this.classList.toggle('flip'); //if valid, flips card using css class
+    this.classList.add('flip'); //if valid, flips card using css class
 
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
         firstCard = this; //stores this as first card
-    } else {
+
+        return;
+    } 
         //second card
-        hasFlippedCard = false;
         secondCard = this;
-
-        // do the cards match
-        if (firstCard.dataset.image === secondCard.dataset.image) {
-           // if its a match cards wont be allowed to be flipped back
-           firstCard.removeEventListener('click', flipCard); 
-           secondCard.removeEventListener('click', flipCard);
-        } else {
-            // if its not a match
-            setTimeout(() => {
-            firstCard.classList.remove('flip');
-            secondCard.classList.remove('flip');
-            }, 1500);
-        }
-
-       
+        checkForMatch();
     }
-   
-}
-
-cards.forEach(card => card.addEventListener('click', flipCard));
-
-// run the game
-function runGame() {
-    
-}
 
 
-// card matching logic
+function checkForMatch() {
+    let isMatch = firstCard.dataset.image === secondCard.dataset.image;
+      
+        isMatch ? disableCards() : unflipCards();
+      }
+        
+     
+function disableCards() {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+          
+        resetBoard();
+        }
+          
+function unflipCards() {
+        lockBoard = true;
+          
+        setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+          
+        resetBoard();
+        }, 500);
+          }
+          
+function resetBoard() {
+            [hasFlippedCard, lockBoard] = [false, false];
+            [firstCard, secondCard] = [null, null];
+          }
+          
+          (function shuffle() {
+            cards.forEach(card => {
+              let randomPos = Math.floor(Math.random() * 16);
+              card.style.order = randomPos;
+            });
+          })();
+          
+          cards.forEach(card => card.addEventListener('click', flipCard));
 
-function check() {
-   
-}
-
-function correctMatch() {
-  
-}
-
-
-
-function incorrectMatch() {
-
-}
 
 function timer() {
     let secs = 0
