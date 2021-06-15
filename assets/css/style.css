@@ -5,6 +5,7 @@
   padding: 0;
   font-family: 'Amatic-sc', sans-serif;
   box-sizing: border-box;
+  text-align: center;
 }
 
 
@@ -86,4 +87,23 @@ body {
   transform: rotateY(180deg);
 }
 
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
+.hero-btn {
+  border: 1px solid #ff5100;
+  background: #ff5100;
+  color: #fff;
+  text-decoration: none;
+  transition: 1s;
+}
