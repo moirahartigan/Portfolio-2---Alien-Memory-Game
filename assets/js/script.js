@@ -22,11 +22,20 @@ function flipCard() {
         hasFlippedCard = false;
         secondCard = this;
 
-        console.log({firstCard, secondCard});
-
         // do the cards match
-        console.log(firstCard.dataset.image);
-        console.log(secondCard.dataset.image);
+        if (firstCard.dataset.image === secondCard.dataset.image) {
+           // if its a match cards wont be allowed to be flipped back
+           firstCard.removeEventListener('click', flipCard); 
+           secondCard.removeEventListener('click', flipCard);
+        } else {
+            // if its not a match
+            setTimeout(() => {
+            firstCard.classList.remove('flip');
+            secondCard.classList.remove('flip');
+            }, 1500);
+        }
+
+       
     }
    
 }
