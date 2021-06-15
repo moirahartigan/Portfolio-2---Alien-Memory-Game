@@ -4,31 +4,37 @@
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false; //used to check if card has already been clicked 
+let lockBoard = false;
 let firstCard, secondCard; //Used to check for cards match
 /*
 onclick function for cards, toggles flip class for css effects
 code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
 */
 function flipCard() {
+    if (lockBoard) return;
+    if (this === firstCard) return;
+
     this.classList.add('flip'); //if valid, flips card using css class
 
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
         firstCard = this; //stores this as first card
-
         return;
     } 
         //second card
         secondCard = this;
+        
         checkForMatch();
     }
 
-
+/*
+ternary operator checks if firstCard & secondCard 'data-image' are a match
+code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
+*/
 function checkForMatch() {
-    let isMatch = firstCard.dataset.image === secondCard.dataset.image;
-      
-        isMatch ? disableCards() : unflipCards();
+    let isMatch = firstCard.dataset.image === secondCard.dataset.image; //checks if dataset.image are a match
+      isMatch ? disableCards() : unflipCards();
       }
         
      
@@ -36,7 +42,7 @@ function disableCards() {
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
           
-        resetBoard();
+        resetGameBoard();
         }
           
 function unflipCards() {
@@ -46,16 +52,20 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
           
-        resetBoard();
-        }, 500);
+        resetGameBoard();
+        lockBoard = false;
+        }, 700);
           }
-          
-function resetBoard() {
+ /*
+resetBoardStatus clears values used in flipcard & checkformatch functions
+code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
+*/         
+function resetGameBoard() {
             [hasFlippedCard, lockBoard] = [false, false];
             [firstCard, secondCard] = [null, null];
           }
           
-          (function shuffle() {
+(function shuffle() {
             cards.forEach(card => {
               let randomPos = Math.floor(Math.random() * 16);
               card.style.order = randomPos;
