@@ -93,12 +93,5 @@ function timer() {
 }
 // shuffle the cards and loop through to make the cards appear in different places on each play
 // cards can be shuffled on load and restart
-function shuffle() {
-  
-}
 
-
-function reset() {
-
-}
 

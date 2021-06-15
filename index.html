@@ -110,7 +110,31 @@
    </div>
 
 </div>
+<div>
+  <button class="btn btn-success" onclick="reset()">New Game</button>
+</div>
+    </div>
 
+    <!--Modal on game over -->
+    <div class="modal" id="gameOverModal">
+      <div class="modal-content">
+        <span aria-label="close" role="button" class="close" id="closeModal">&times;</span>
+        <div class="modal-header">
+          <h2>Game Over</h2>
+        </div>
+        <div class="modal-body">
+          <div class="message">
+            <p>Well Done! <span class="game-over-icons">🎊 🎊 🎊</span> You have found all the pairs. <span
+                class="game-over-icons" style="animation-delay: 0.2s">🎉 🎉 🎉</span></p>
+            <p>You completed the game using <span id="totalGameMoves"></span> moves
+              <br>in <span id="totalGameTime"></span>
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="brown-button" onClick="playAgain()">Play Again</button>
+        </div>
+      </div>
     </div>
 
     
