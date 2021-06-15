@@ -25,6 +25,8 @@ function flipCard() {
         console.log({firstCard, secondCard});
 
         // do the cards match
+        console.log(firstCard.dataset.image);
+        console.log(secondCard.dataset.image);
     }
    
 }
