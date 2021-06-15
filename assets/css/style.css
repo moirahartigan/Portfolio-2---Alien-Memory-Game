@@ -107,3 +107,13 @@ body {
   text-decoration: none;
   transition: 1s;
 }
+
+.game-over-message {
+  text-transform: uppercase;
+  background-color: #ff5100;
+  border: 1px solid #ff5100;
+  color: #fff;
+  margin: 0 15px 10px 15px;
+  border-radius: 8px;
+  text-shadow: 2px 3px 2px #000;
+}

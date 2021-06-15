@@ -91,7 +91,13 @@ function timer() {
     }, 1000)
 
 }
-// shuffle the cards and loop through to make the cards appear in different places on each play
-// cards can be shuffled on load and restart
+
+function gameOverMsg() {
+ const gameOverMsg = document.getElementsByClassName('game-over-message');   
+}
+
+function newGame() {
+    
+}
 
 
