@@ -7,7 +7,7 @@ let hasFlippedCard = false; //used to check if card has already been clicked
 let lockBoard = false;
 let firstCard, secondCard; //Used to check for cards match
 /*
-onclick function for cards, toggles flip class for css effects
+onclick function for cards, add flip class for css effects
 code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
 */
 function flipCard() {
@@ -100,11 +100,7 @@ function timer() {
 }
 
 function gameOverMsg() {
- const gameOverMsg = document.getElementsByClassName('game-over-message');   
-}
+ 
 
 function newGame() {
-    
-}
-
 
