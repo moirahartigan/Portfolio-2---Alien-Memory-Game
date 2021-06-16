@@ -67,13 +67,20 @@ function resetGameBoard() {
           
 (function shuffle() {
             cards.forEach(card => {
-              let randomPos = Math.floor(Math.random() * 16);
+               let randomPos = Math.floor(Math.random() * 16);
               card.style.order = randomPos;
-            });
+             });
           })();
-          
-          cards.forEach(card => card.addEventListener('click', flipCard));
+  
+ // let shuffleCard = [monster-1, monster-1, monster-2, monster-2, monster-3, monster-3, monster-4, monster-4, 
+   // monster-5, monster-5, monster-6, monster-6, monster-7, monster-7, monster-8, monster-8];
 
+    //function shuffleImages() {
+    //for (let i = 0; i < arr.length; i++)
+    //shuffleCard.push(arr[i], arr[i]);
+ // }       
+          
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 function timer() {
     let secs = 0
