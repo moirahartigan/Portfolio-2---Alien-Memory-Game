@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url('../images/background-sky.jpg');
+ background-image: url('../images/background-sky.jpg'); 
 }
 
 .page-title {
@@ -109,12 +109,56 @@ body {
   transition: 1s;
 }
 
-.game-over-message {
-  text-transform: uppercase;
-  background-color: #ff5100;
-  border: 1px solid #ff5100;
-  color: #fff;
-  margin: 0 15px 10px 15px;
-  border-radius: 8px;
-  text-shadow: 2px 3px 2px #000;
+
+/* game-over modal */
+
+.modal {
+  /*Hidden by default */
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Modal Content/Box */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 5% auto;
+  border: 0.8em solid #2376b9;
+  padding-right: 2em;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+  align-self: flex-end;
+  color: #28e;
+  font-size: 5em;
+}
+.close:hover,
+.close:focus {
+  color: #5cf;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Image*/
+.modal-img {
+  display: inline-block;
+  margin: 1em 0 1em;
+  width: 20em;
+}
+p.stats {
+  font-weight: 600;
+}
+p.stats:last-child {
+  margin-bottom: 1em;
+}
+.play-again-btn {
+  background: #ff5100;
+  margin-bottom: 1em;
 }
