@@ -109,7 +109,6 @@ body {
   transition: 1s;
 }
 
-
 /* game-over modal */
 
 .modal {
@@ -118,7 +117,7 @@ body {
   position: fixed;
   z-index: 99;
   left: 0;
-  top: 0;
+  top: 60px;
   width: 100%;
   height: 100%;
 }
@@ -131,8 +130,9 @@ body {
   background-color: #fff;
   margin: 5% auto;
   border: 0.8em solid #2376b9;
-  padding-right: 2em;
+  padding: 2em;
   width: 80%;
+  border-radius: 20px;
 }
 /* The Close Button */
 .close {
@@ -152,13 +152,4 @@ body {
   margin: 1em 0 1em;
   width: 20em;
 }
-p.stats {
-  font-weight: 600;
-}
-p.stats:last-child {
-  margin-bottom: 1em;
-}
-.play-again-btn {
-  background: #ff5100;
-  margin-bottom: 1em;
-}
+

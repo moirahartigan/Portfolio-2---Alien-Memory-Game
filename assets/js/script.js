@@ -82,14 +82,20 @@ function resetGameBoard() {
           
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-function timer() {
+// game timer
+
     let secs = 0
     let mins = 0
     let SS
     let MM
+    let timer = document.querySelectorAll("#time-remaining")
+function startTimer() {    
     setInterval(()=>{
         secs++
-        if(secs==60){secs=0; mins++}
+        if(secs==60){
+            secs=0; 
+            mins++
+        }
 
         secs<10?SS=`0${secs}`:SS=`${secs}`
         mins<10?MM=`0${mins}`:SS=`${mins}`
@@ -100,7 +106,6 @@ function timer() {
 }
 
 function gameOverMsg() {
+
+}
  
-
-function newGame() {
-

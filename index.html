@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,7 @@
 
   <!-- style sheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
 
 </head>
 <title>Alien Memory | Memory Game</title>
@@ -110,6 +109,8 @@
       <img class="card-front" src="assets/images/monster-8.jpg" alt="monster 8">
       <img class="card-back" src="assets/images/cardback.jpg" alt="Card Back">
     </div>
+
+    
   </div>
 
   <!-- New Game again -->
@@ -119,18 +120,20 @@
   </div>
 
    <!-- Modal -->
-   <div id="modal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close"></span>
-      <h2>WELL DONE!</h2>
-      <br>
-      <p>You have won the game and found all 8 pairs of cards.</p>
-      <br>
-      <img class="modal-img" src="/assets/images/thumbs-up.png" alt="Thumbs up smiley face">
-      <button class="btn play-again-btn">Play Again?</button>
+   <section class="win-game-msg">
+    <div class="modal">
+    <!-- modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <h2>Well Done!</h2>
+          <br>
+          <p>You have won the game and found all 8 pairs of cards.</p>
+          <br>
+          <img class="modal-img" src="/assets/images/thumbs-up.png" alt="Thumbs up smiley face">
+          <button class="btn hero-btn">Play Again?</button>
+      </div>
     </div>
-  </div>
+  </section>
  
 
   <script src="assets/js/script.js"></script>
