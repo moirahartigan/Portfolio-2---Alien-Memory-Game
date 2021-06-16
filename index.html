@@ -116,26 +116,20 @@
     </div>
 
     <!--Modal on game over - display hidden by default-->
-    <div class="modal game-over-message">
-      <div class="modal-content">
-        <span aria-label="close" role="button" class="close" id="closeModal">&times;</span>
-        <div class="modal-header">
-          <h2>Game Over</h2>
-        </div>
-        <div class="modal-body">
-          <div class="message">
-            <p>Well Done! <span class="game-over-icons">🎊 🎊 🎊</span> You have found all the pairs. <span
-                class="game-over-icons" style="animation-delay: 0.2s">🎉 🎉 🎉</span></p>
-            <p>You completed the game using <span id="totalGameMoves"></span> moves
-              <br>in <span id="totalGameTime"></span>
-            </p>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button class="brown-button" onClick="playAgain()">Play Again</button>
+    <section class="win-game-modal">
+      <div id="modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"></span>
+          <h2>WELL DONE!</h2>
+          <br>
+          <p>You have won the game and found all 8 pairs of cards.</p>
+          <br>
+          <img class="modal-img" src="/assets/images/thumbs-up.png" alt="Thumbs up smiley face">
+          <button class="btn play-again-btn">Play Again?</button>
         </div>
       </div>
-    </div>
+    </section>
 
     
 
