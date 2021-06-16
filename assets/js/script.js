@@ -4,7 +4,7 @@
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false; //used to check if card has already been clicked 
-let lockBoard = false;
+let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
 let firstCard, secondCard; //Used to check for cards match
 /*
 onclick function for cards, add flip class for css effects
@@ -82,30 +82,36 @@ function resetGameBoard() {
           
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-// game timer
+// game info -timer 
 
-    let secs = 0
-    let mins = 0
-    let SS
-    let MM
-    let timer = document.querySelectorAll("#time-remaining")
-function startTimer() {    
-    setInterval(()=>{
-        secs++
-        if(secs==60){
-            secs=0; 
-            mins++
-        }
 
-        secs<10?SS=`0${secs}`:SS=`${secs}`
-        mins<10?MM=`0${mins}`:SS=`${mins}`
-        
-        document.querySelector('#time-remaining').innerHTML = `${MM}:${SS}`
-    }, 1000)
+let moveCounter = 0;
+let timer = {
+  seconds: 0,
+  minutes: 0,
+  clearTime: -1
+};
 
-}
 
-function gameOverMsg() {
+//Start time first card is clicked
 
-}
- 
+//Start timer
+let startTimer = function() {
+    if (timer.seconds === 59) {
+      timer.minutes++;
+      timer.seconds = 0;
+    } else {
+      timer.seconds++;
+    }
+
+//  reset Clock back to 0 and restart
+
+function resetTimer() {
+    clearInterval(timer.clearTime);
+    timer.seconds = 0;
+    timer.minutes = 0;
+    $(".timer").text("0:00");
+  
+    timer.clearTime = setInterval(startTimer, 1000);
+  }
+
