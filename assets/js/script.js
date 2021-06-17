@@ -69,9 +69,53 @@ function shuffle() {
   })
 
 };
-   
+
+// game info -timer 
 
 
+let moveCounter = 0;
+let timer = {
+  seconds: 0,
+  minutes: 0,
+  clearTime: -1
+};
+
+//Start time first card is clicked
+
+//Start timer
+let startTimer = function() {
+  if (timer.seconds === 59) {
+    timer.minutes++;
+    timer.seconds = 0;
+  } else {
+    timer.seconds++;
+  };
+  // Ensure that single digit seconds are preceded with a 0
+  var formattedSec = "0";
+  if (timer.seconds < 10) {
+    formattedSec += timer.seconds;
+  } else {
+    formattedSec = String(timer.seconds);
+  }
+
+  var time = String(timer.minutes) + ":" + formattedSec;
+  $(".timer").text(time);
+};
+
+
+function reset(){
+  setTimeout(() => {
+    flippedCard = false;
+    [firstCard, secondCard] = [null, null];
+    pairs = 8;
+    timer = 0;
+    moves = 0;
+    cards.forEach(cardReset => cardReset.classList.remove('flip'));
+    shuffle();
+    cards.forEach(card => card.addEventListener('click', flipCard));
+  }, 500);
+  console.log("reset button clicked");
+}
 
 
  
