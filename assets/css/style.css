@@ -44,7 +44,7 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: center;
-  perspective: 1000px;
+  perspective: 1000px;   /* to create a 3D flip effect -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
 }
 
 .memory-card {
@@ -53,14 +53,15 @@ body {
   height: 100px;
   width: 100px;
   transform: scale(1);
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /* to position the cardsin the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+  transition: transform .5s;
 }
 /* need to fix bug of border showing properly change seudo class to active instead to give a zoom effect*/
 .memory-card:active {
   /* box-shadow: inset 2px 2px 2px 10px white; */
   /* box-sizing: border-box; */
-  transform: scale(.95);
-  transition: transform .3s;
+  transform: scale(.97);
+  transition: transform .2s;
 } 
 
 .memory-card.flip {
