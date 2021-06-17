@@ -1,6 +1,6 @@
 // define variables
 const cards = document.querySelectorAll('.memory-card');
-
+const winMsg = document.getElementById('win-msg');
 let hasFlippedCard = false; //used to check if card has already been clicked 
 let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
 let firstCard, secondCard; //Used to check for cards match
