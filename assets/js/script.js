@@ -22,21 +22,29 @@ if (!flippedCard){
     // The first card clicked
     flippedCard = true;
     firstCard = this; //stores this as first card
-   } else {
-       //The second card clicked
-       flippedCard = false;
-       secondCard = this; 
-       
-    //  Check if cards match? - if not thay will be flipped back
-  if (firstCard.dataset.image === secondCard.dataset.image) {
-    disableCards(); 
-    } else {
-    unflipCards();  
-    }     
-   }
+   
+    return;
 }
 
-function disableCards(){
+//The second card clicked
+flippedCard = false;
+secondCard = this; 
+
+checkCardMatch();
+}
+/*
+ternary operator checking if firstCard & secondCard 'data-id' are a match
+initial code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
+*/
+function checkCardMatch() {
+  let isMatch = firstCard.dataset.image === secondCard.dataset.image;
+
+  isMatch ? pairMatch() : noMatch();
+ }
+       
+  
+
+function pairMatch(){
 // if its a match the eventlistener is disabled
 firstCard.removeEventListener('click', flipCard);  
 secondCard.removeEventListener('click', flipCard); 
@@ -44,7 +52,7 @@ secondCard.removeEventListener('click', flipCard);
 resetBoard();
 }
 
-function unflipCards(){
+function noMatch(){
     lockBoard = true; // if no match, board is locked until cards are flipped back
  // then if its not a match the flipclass is removed
  setTimeout(() => {
@@ -70,39 +78,6 @@ function shuffle() {
 
 };
 
-// game info -timer 
-
-
-let moveCounter = 0;
-let timer = {
-  seconds: 0,
-  minutes: 0,
-  clearTime: -1
-};
-
-//Start time first card is clicked
-
-//Start timer
-let startTimer = function() {
-  if (timer.seconds === 59) {
-    timer.minutes++;
-    timer.seconds = 0;
-  } else {
-    timer.seconds++;
-  };
-  // Ensure that single digit seconds are preceded with a 0
-  var formattedSec = "0";
-  if (timer.seconds < 10) {
-    formattedSec += timer.seconds;
-  } else {
-    formattedSec = String(timer.seconds);
-  }
-
-  var time = String(timer.minutes) + ":" + formattedSec;
-  $(".timer").text(time);
-};
-
-
 function reset(){
   setTimeout(() => {
     flippedCard = false;
@@ -114,8 +89,19 @@ function reset(){
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
   }, 500);
-  console.log("reset button clicked");
+  console.log("reset button clicked"); // timer reset will go here
 }
+
+
+// move counter & game timer 
+
+function moveCounter() {
+  moves++; //counts a move when 2 cards are selected
+  Counter.innerHTML = moves;
+  console.log('move counter to start');
+}
+
+
 
 
  
