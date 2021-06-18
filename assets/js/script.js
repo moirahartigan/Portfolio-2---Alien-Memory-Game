@@ -17,21 +17,27 @@ function flipCard() {
 if(lockBoard) return; // return is lockBoard is true so the rest of the function wont be executed
 if (this === firstCard) return;
 this.classList.add('flip'); //if valid, flips card using css class
-
+let len = moves.length;
+if (len === 2){
+  moveCounter();
+}
 if (!flippedCard){
     // The first card clicked
     flippedCard = true;
     firstCard = this; //stores this as first card
-   
+    timer();
     return;
+    
 }
 
 //The second card clicked
 flippedCard = false;
 secondCard = this; 
 
+moveCounter();
 checkCardMatch();
 }
+
 /*
 ternary operator checking if firstCard & secondCard 'data-id' are a match
 initial code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
@@ -82,7 +88,7 @@ function reset(){
   setTimeout(() => {
     flippedCard = false;
     [firstCard, secondCard] = [null, null];
-    pairs = 8;
+    
     timer = 0;
     moves = 0;
     cards.forEach(cardReset => cardReset.classList.remove('flip'));
@@ -94,12 +100,23 @@ function reset(){
 
 
 // move counter & game timer 
-
+let moves = 0;
 function moveCounter() {
-  moves++; //counts a move when 2 cards are selected
-  Counter.innerHTML = moves;
-  console.log('move counter to start');
+  
 }
+
+//game timer
+let time = 0;
+function timer(){
+  setTimeout(function(){
+    let timerDiv = document.getElementById("timer");
+    time++;
+    timerDiv.innerHTML = time;
+    timer();
+  }, 1000)
+}
+
+
 
 
 
