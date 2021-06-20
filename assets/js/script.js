@@ -100,8 +100,17 @@ function resetBoard(){
   [firstCard,secondCard] = [null, null];
 }
 
-function showWinMessage(){
+const modal = document.getElementById('modal');
 
+function showWinMessage(){
+modal.classList("display", "block")
+}
+
+//To close modal
+window.onclick = function (event) {
+  if (event.target.id == 'close') {
+    document.getElementById('modal').style.display = "none";
+  }
 }
 
 function gameOver(){
@@ -117,6 +126,7 @@ function shuffle() {
 
 };
 
+// New Game Button
 function reset(){
   setTimeout(() => {
     flippedCard = false;
@@ -128,7 +138,7 @@ function reset(){
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
   }, 500);
-  console.log("reset button clicked"); // timer reset will go here
+  // timer reset will go here
 }
 
 
