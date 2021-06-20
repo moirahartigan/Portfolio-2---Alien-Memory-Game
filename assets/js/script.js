@@ -78,21 +78,28 @@ moveContainer.innerHtml = 0;
 function addMove() {
   moves++;
   moveContainer.innerHTML = moves;
-  console.log('add move');
 }
 
-//game timer -https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript
-let sec = 0;
-function timer(val) {
-  return  val > 9 ? val : "0" + val;
-}
-setInterval(function(){
-  document.getElementById("seconds").innerHTML=timer(++sec%60);
-  document.getElementById("minutes").innerHTML=timer(parseInt(sec/60,10));
+//timer
+const timeCounter = document.querySelector(".timer");
+let time;
+let minute = 0;
+let second = 0;
+let timeStart = false;
+
+function timer() {
+time = setInterval(function() {
+  seconds++;
+  if (seconds === 60) {
+    minutes++;
+    seconds = 0;
+  }
+  timeCounter.innerHTML = "Timer: " + minutes + "Mins" + seconds + "Secs";
 }, 1000);
+}
 
-function stopTimer(){ //finish this
-  clearInterval();
+function stopTime(){ //finish this
+  clearInterval(time);
 }
 
 function resetBoard(){
@@ -100,22 +107,25 @@ function resetBoard(){
   [firstCard,secondCard] = [null, null];
 }
 
+function winGame() {
+  //if (pairMatch.length === 2) {
+   //console.log("i wont the game");
+  }
+//}
+
 const modal = document.getElementById('modal');
+const close = document.getElementById('close');
 
 function showWinMessage(){
-modal.classList("display", "block")
+modal.style.display = "block";
 }
-
-//To close modal
+// when the user clicks the (x) To close modal
 window.onclick = function (event) {
   if (event.target.id == 'close') {
     document.getElementById('modal').style.display = "none";
   }
 }
 
-function gameOver(){
-  
-}
 
 // Card shuffle
 function shuffle() {
