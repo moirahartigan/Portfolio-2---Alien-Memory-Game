@@ -5,6 +5,7 @@ const cards = document.querySelectorAll('.memory-card');
 let flippedCard = false; //used to check if card has already been clicked 
 let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
 let firstCard, secondCard; //Used to check for cards match
+let moves = 0;
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 shuffle();
@@ -16,25 +17,21 @@ code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and 
 function flipCard() {
 if(lockBoard) return; // return is lockBoard is true so the rest of the function wont be executed
 if (this === firstCard) return;
+
 this.classList.add('flip'); //if valid, flips card using css class
-let len = moves.length;
-if (len === 2){
-  moveCounter();
-}
-if (!flippedCard){
+
+if (!flippedCard) {
     // The first card clicked
     flippedCard = true;
     firstCard = this; //stores this as first card
-    timer();
+   
     return;
     
 }
 
 //The second card clicked
-flippedCard = false;
 secondCard = this; 
 
-moveCounter();
 checkCardMatch();
 }
 
@@ -48,32 +45,57 @@ function checkCardMatch() {
   isMatch ? pairMatch() : noMatch();
  }
        
-  
-
+// matched cards will be disabled for clicks once they are flipped
 function pairMatch(){
-// if its a match the eventlistener is disabled
+
 firstCard.removeEventListener('click', flipCard);  
 secondCard.removeEventListener('click', flipCard); 
 
+showWinMessage();
 resetBoard();
 }
 
+// if no match, board is locked until cards are flipped back
 function noMatch(){
-    lockBoard = true; // if no match, board is locked until cards are flipped back
- // then if its not a match the flipclass is removed
+    lockBoard = true; 
+ 
  setTimeout(() => {
     firstCard.classList.remove('flip');
   secondCard.classList.remove('flip');
   
   resetBoard();
-  }, 900);  
+  }, 900); 
+  
+  // Add move
+  addMove();
   
 }
+
+//Move counter
+const moveContainer = document.querySelector(".moves");
+moves = 0;
+moveContainer.innerHtml = 0;
+function addMove() {
+  moves++;
+  moveContainer.innerHTML = moves;
+  console.log('add move');
+}
+
+//game timer -https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript
+let sec = 0;
+function timer(val) {
+  return  val > 9 ? val : "0" + val;
+}
+setInterval(function(){
+  document.getElementById("seconds").innerHTML=timer(++sec%60);
+  document.getElementById("minutes").innerHTML=timer(parseInt(sec/60,10));
+}, 1000);
 
 function resetBoard(){
   [flippedCard, lockBoard] = [false, false];
   [firstCard,secondCard] = [null, null];
 }
+
 
 // Card shuffle
 function shuffle() {
@@ -99,22 +121,9 @@ function reset(){
 }
 
 
-// move counter & game timer 
-let moves = 0;
-function moveCounter() {
-  
-}
 
-//game timer
-let time = 0;
-function timer(){
-  setTimeout(function(){
-    let timerDiv = document.getElementById("timer");
-    time++;
-    timerDiv.innerHTML = time;
-    timer();
-  }, 1000)
-}
+
+  
 
 
 

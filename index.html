@@ -22,11 +22,11 @@
   <!-- Memory game grid -->
   <div class="game-container">
     <div class="game-info-container">
-      <div class="game-info">Time 
-        <span class="timer" id="timer">0:00</span>
+      <div onclick="flipcard()" class="game-info">Time 
+        <span class="timer" id="minutes"></span>:<span id="seconds"></span>
       </div>
       <div class="game-info"> Moves
-        <span id="moves">0</span>
+        <span class="moves">0</span>
       </div>
     </div>
 
@@ -121,7 +121,7 @@
 
    <!-- Modal -->
    <section class="win-msg">
-    <div class="modal">
+    <div class="modal close">
     <!-- modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -135,6 +135,7 @@
     </div>
   </section>
  
+  
   <script src="assets/js/script.js"></script>
 </body>
 
