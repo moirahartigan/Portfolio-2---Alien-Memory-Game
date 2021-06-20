@@ -51,7 +51,7 @@ function pairMatch(){
 firstCard.removeEventListener('click', flipCard);  
 secondCard.removeEventListener('click', flipCard); 
 
-showWinMessage();
+
 resetBoard();
 }
 
@@ -98,20 +98,22 @@ time = setInterval(function() {
 }, 1000);
 }
 
-function stopTime(){ //finish this
+function stopTime(){ 
   clearInterval(time);
-}
+};
 
 function resetBoard(){
   [flippedCard, lockBoard] = [false, false];
   [firstCard,secondCard] = [null, null];
-}
+};
+
 
 function winGame() {
-  //if (pairMatch.length === 2) {
-   //console.log("i wont the game");
+  if (pairMatch.length === 2) {
+   console.log("i wont the game");
+  
   }
-//}
+};
 
 const modal = document.getElementById('modal');
 const close = document.getElementById('close');
@@ -141,14 +143,17 @@ function reset(){
   setTimeout(() => {
     flippedCard = false;
     [firstCard, secondCard] = [null, null];
-    
-    timer = 0;
+    stopTime();
+    timeStart = false;
+    seconds = 0;
+    minutes = 0;
+    timeCounter.innerHTML = "Timer: 0:00"
     moves = 0;
     cards.forEach(cardReset => cardReset.classList.remove('flip'));
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
   }, 500);
-  // timer reset will go here
+  
 }
 
 
