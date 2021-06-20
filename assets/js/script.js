@@ -91,11 +91,22 @@ setInterval(function(){
   document.getElementById("minutes").innerHTML=timer(parseInt(sec/60,10));
 }, 1000);
 
+function stopTimer(){ //finish this
+  clearInterval();
+}
+
 function resetBoard(){
   [flippedCard, lockBoard] = [false, false];
   [firstCard,secondCard] = [null, null];
 }
 
+function showWinMessage(){
+
+}
+
+function gameOver(){
+  
+}
 
 // Card shuffle
 function shuffle() {
