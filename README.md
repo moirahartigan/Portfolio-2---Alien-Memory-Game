@@ -61,9 +61,10 @@ The plan for sound was to keep it as simple as possible. The only sound is based
 
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display. 
 
-[Wireframe for Mobile](https:)    
-[Wireframe for Tablet](https:)  
-[Wireframe for Desktop](https://github.com/moirahartigan/)  
+[Wireframe for Tablet & Mobile- Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-game-mobile%26tablet.png)    
+[Wireframe for Tablet & Mobile- Win Game message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-mobile%26tablet-win-game.png)  
+[Wireframe for Desktop - Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-game-desktop.png)
+[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-win-game-desktop.png) 
 ***
 ***
 # Features
