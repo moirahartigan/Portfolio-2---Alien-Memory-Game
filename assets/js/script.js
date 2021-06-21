@@ -48,7 +48,7 @@ function checkCardMatch() {
   let isMatch = firstCard.dataset.image === secondCard.dataset.image;
   if(isMatch) perfectMatch += 1
   isMatch ? pairMatch() : noMatch();
-  if(perfectMatch === 2) winGame();
+  if(perfectMatch === 8) winGame();
 }
 
 // matched cards will be disabled for clicks once they are flipped
@@ -60,20 +60,6 @@ function pairMatch() {
 
   resetBoard();
 }
-
-//****** */ need to iterate through an array of tiles  and check is isMatch is true for all of them ******
-
-
-
-// function checkPair() {
-// if (flippedCard[0] === flippedCard[1]) {
-// flippedCard[0].isMatch = true;
-// flippedCard[1].isMatch = true;
-// flippedCard.length = 0;
-// pairMatch++;
-// }
-
-// };
 
 // if no match, board is locked until cards are flipped back
 function noMatch() {
@@ -105,9 +91,9 @@ function addMove() {
 const timeContainer = document.querySelector(".timer");
 let time;
 let minutes = 0;
-let seconds = 00;
+let seconds = 0;
 let timeStart = false;
-timeContainer.innerHTML = "Timer: " + "0" + ' : ' + "00";
+timeContainer.innerHTML = "Timer " + minutes + " : " + seconds;
 
 function timer() {
   time = setInterval(function () {
@@ -116,10 +102,9 @@ function timer() {
       minutes++;
       seconds = 0;
     }
-    timeContainer.innerHTML = "Timer: " + minutes + " : " + seconds;
+    timeContainer.innerHTML = "Timer " + minutes + " : " + seconds;
   }, 1000);
 };
-
 
 
 function stopTime() {
@@ -135,8 +120,6 @@ function resetBoard() {
 
 function winGame() {
   showWinMessage();
-  console.log("i won the game");
-
 }
 
 // *********************** Modal pop up ********************************************
@@ -165,7 +148,7 @@ function shuffle() {
 
 };
 
-// New Game Button **************no resetting the time or move counter **************
+// New Game Button 
 function reset() {
   setTimeout(() => {
     flippedCard = false;
@@ -175,9 +158,10 @@ function reset() {
     timeStart = false;
     seconds = 0;
     minutes = 0;
-    timeContainer.innerHTML = "Timer: 0:00"
+    timeContainer.innerHTML = "Timer 0:00"
     moves = 0;
     moveContainer.innerHTML = 0;
+    perfectMatch = 0;
     cards.forEach(cardReset => cardReset.classList.remove('flip'));
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
