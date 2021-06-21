@@ -36,19 +36,30 @@ This is a flip card memory game.
 # User Experience
 
 ## User Stories
-* The user should see a grid style game with 16 cards on display - these cards will have a front and back face.
-* The user should be able to click any of the cards which are facing down (not yet flipped) to flip over and try to find a matched pair.
-* The user should be able to find the matched pairs by clicking on the cards. If they click two cards and these cards are the same, they match, and the cards remain in thier flipped position , if they don't match they revert back to their previous position of facing down and the user must try again.
-* The user should not be able to click on a new card until the previous selected cards have returned to their position of face down.
-* The user should be receiving an interactive message at the end of the game when all matched pairs have been found. This message will display the number of moves and the time taken to win the game. 
-* The user should be able to close the pop up message at the end of the game with a click on the "Replay" button.
+* The user should see a grid style game with cards on display - these cards will have a front and back image.
+* The user should be able to click any two cards which are facing down (not yet flipped) to flip over and try to find a matched pair.
+* The user should be receiving a message to confirm their win at the end of the game when all matched pairs have been found.  
+* The user should be able to close the pop up message at the end of the game with a click on the "x" button.
+* The user should have the option to reset the game once completed, the cards will be shuffled and the user can and try to beat their previous time and number of moves taken on thier next try.
+* By playing this game the user should be able to test their memory skill in a fun environment.
 
 ## Design
 
+The goal of this project is to build a fun memory game where the user can replay as many times as they wish. The game is designed to target a user of any age from younger children who may just want to find the pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game.
+
+The game layout has been kept simple using 16 cards which have been kept to a relatively small size so the game can still look the same in either desktop, tablet or mobile view without having to change the structure completely.
+
 ### Overall Feel 
 
+This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen.
+ <p align="center">  
+  <img src="">
+ </p>
+Alien space ships we
 
 ### Color Scheme
+
+
 
 ### Typography
 
@@ -133,10 +144,9 @@ This site was deployed through GitHub Pages using the following steps:
 * Locate the repository.
 * Click the "settings" option along the options bar.
 * Then go to "Pages" tab in the left hand side sidebar.
-* Then under "Source" click the "None" dropdown and select the "Main" branch
+* Then under "Source" click the "None" dropdown and select the "Master" branch
 * Click the save button.
-* The page will update and at the top it will say: "Your site is ready to be published at
-* (https:)
+* The page will update and at the top it will say: "Your site is ready to be published at https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/ "
 
 ***
 ***
