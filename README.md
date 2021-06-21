@@ -13,8 +13,7 @@ This is a flip card memory game.
   + [Design](#design)
     + [Overall Feel](#overall-feel)
     + [Color Scheme](#color-scheme)
-    + [Typography](#typography)
-    + [Sound](#sound)
+    + [Typography](#typography)   
   + [Wireframes](#wireframes)
 + [Features](#features)
   + [Current Features](#current-features)
@@ -53,9 +52,6 @@ This is a flip card memory game.
 
 ### Typography
 
-### Sound
-
-The plan for sound was to keep it as simple as possible. The only sound is based on the user getting a matched pair of cards.
 
 ## Wireframes
 
@@ -70,16 +66,14 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 # Features
 
 ## Current Features
-+ This is a one page game.
-+ 
-+ 
-+ 
-+ 
++ When a player starts a game, a displayed timer should also start and once the player wins the game, the timer stops.
++ A restart button allows the user to reset the game board, the timer and the moves counter.
++ A congratulations modal appears when the user wins the game and matches all 8 pairs.
 
 ## Future Features
-+ 
-+ 
-+ 
++ I would like to add different game levels to allow the user to choose an easy, medium or difficuly level of of play.
++ I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
++ I would like to add a mute button to allow the user to control the sound effects.
 
 ***
 ***
