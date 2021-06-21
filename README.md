@@ -51,18 +51,23 @@ The game layout has been kept simple using 16 cards which have been kept to a re
 
 ### Overall Feel 
 
-This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen.
+This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the color scheme was chosen mirror this feeling.
  <p align="center">  
   <img src="">
  </p>
-Alien space ships we
+Alien space ships we used as the card back images and each spaceship housed an ailen charactor which was viewed when the card was flipped.
 
 ### Color Scheme
+The color scheme was chosen to tie in with the outer space theme.  
 <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
  </p>
+A bright orange colour was chosen to highlight the replay button and this color was matched to the game title. were used for the replay button
 
-
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
+ </p>
+ 
 ### Typography
 
 
