@@ -53,9 +53,28 @@ The game layout has been kept simple using 16 cards which have been kept to a re
 
 This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the color scheme was chosen mirror this feeling.
  <p align="center">  
-  <img src="">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/background-screenshot.png">
  </p>
-Alien space ships we used as the card back images and each spaceship housed an ailen charactor which was viewed when the card was flipped.
+Alien spaceships werre used as the card back image and each spaceship housed an ailen charactor which was viewed when the card was flipped. Each card was given a light blue border to enhance the appearence of the cards and make them stand out from the dark background.
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/card-front-screenshot.png">
+ </p>
+ The Alien charactors were selected to add additional colour to the game once the cards had been flipped.
+ <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-charactors.jpg">
+ </p>
+ 
+ The win message was created to be in contrast with the dark background. A dark overlay was applied to hid the game in the background and a thumbs up image was included to consider younger users who may not be able to read the message.
+ <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/win-modal.png">
+ </p>
+ 
+ Finally a blue "x" was added as a close button on the win message, to allow users to exit the screen and replay the game if they wished.
+ 
+ <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/close-button-screenshot.png">
+ </p>
+ 
 
 ### Color Scheme
 The color scheme was chosen to tie in with the outer space theme.  
@@ -65,7 +84,13 @@ The color scheme was chosen to tie in with the outer space theme.
 A bright orange colour was chosen to highlight the replay button and this color was matched to the game title. were used for the replay button
 
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/new-game-button.png">
+ </p>
+ 
+ The timer and move counter were created using lighter colour so as not to distract the user too much from the game itself.
+ 
+ <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/timer.png">           <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/moves-counter.png">
  </p>
  
 ### Typography
@@ -105,7 +130,6 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 4. [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - To make the game work.
 
 ## Frameworks Libraries and Programmes Used
-* [Font Awesome](https://fontawesome.com/) - used for icons.
 * [Google Fonts](https://fonts.google.com/) - to import the font-family used in the website: Playfair Display and Courgette.
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
@@ -160,7 +184,6 @@ This site was deployed through GitHub Pages using the following steps:
 # Credits
 ## Code
 * The Code Institute material was the main source of information used to create this project.
-* [Bootstrap](https://getbootstrap.com/) for creating a responsive site.
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
 * [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) was used as a general source of knowledge.
 * [youtube](https://www.youtube.com/watch?v=44axq8Absis) This tutorial was used to learn how to achieve a transparent navigation bar.
@@ -176,6 +199,6 @@ This site was deployed through GitHub Pages using the following steps:
 ## Acknowledgements
 * I would like to thank the Slack Community for their endless support.
 * I would like to thank Kasia Bogucka our class cohort facilitator for her constant assistance and encouragement.
-* Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this milestone project.
+* Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this portfolio project.
  
 
