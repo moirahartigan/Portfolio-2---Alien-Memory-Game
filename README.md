@@ -3,7 +3,7 @@
 This is a flip card memory game.
 ## Demo
 
-[View the Live Website Here](https://moirahartigan.github.io//)
+[View the Live Website Here](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
 
 <img src="">
 
