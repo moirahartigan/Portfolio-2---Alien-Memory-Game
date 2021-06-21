@@ -58,7 +58,9 @@ This memory game has been designed to challenge the user within a fun environmen
 Alien space ships we
 
 ### Color Scheme
-
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
+ </p>
 
 
 ### Typography
