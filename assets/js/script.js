@@ -13,7 +13,7 @@ shuffle();
 
 /*
 onclick function for cards, add flip class for css effects
-code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
+code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted  
 */
 function flipCard() {
     if (!gameOn) {
