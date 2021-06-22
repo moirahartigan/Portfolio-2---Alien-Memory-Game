@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,12 @@
 
   <!-- style sheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
+  <title>Alien Memory | Memory Game</title>
 
 </head>
-<title>Alien Memory | Memory Game</title>
+
+
 
 <body>
 
@@ -23,7 +26,7 @@
   <div class="game-container">
     <div class="game-info-container">
       <div onclick="flipcard()" class="game-info">
-        <span class="timer" >Timer 0:00</span>
+        <span class="timer">Timer 0:00</span>
       </div>
       <div class="game-info"> Moves
         <span class="moves">0</span>
@@ -109,33 +112,30 @@
       <img class="card-front" src="assets/images/monster-8.jpg" alt="monster 8">
       <img class="card-back" src="assets/images/cardback.jpg" alt="Card Back">
     </div>
-
-    
   </div>
 
   <!-- New Game again -->
   <div>
     <button class="hero-btn" onclick="reset()">New Game</button>
   </div>
-  </div>
 
-   <!-- Modal -->
-   <section class="win-msg">
+
+  <!-- Modal -->
+  <section class="win-msg">
     <div class="modal" id="modal">
-    <!-- modal content -->
+      <!-- modal content -->
       <div class="modal-content">
         <span id="close" class="close">&times;</span>
-          <h2>Well Done!</h2>
-          <br>
-          <p>You have won the game and found all 8 pairs of cards.</p>
-          <br>
-          <img class="modal-img" src="./assets/images/thumbs-up.png" alt="Thumbs up smiley face">
-          <!-- <button id="btnReplay" class="btn hero-btn" onclick="playAgain()">Play Again?</button> -->
+        <h2>Well Done!</h2>
+        <br>
+        <p>You have won the game and found all 8 pairs of cards.</p>
+        <br>
+        <img class="modal-img" src="./assets/images/thumbs-up.png" alt="Thumbs up smiley face">
       </div>
     </div>
   </section>
- 
-  
+
+
   <script src="assets/js/script.js"></script>
 </body>
 

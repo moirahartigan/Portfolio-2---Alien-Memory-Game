@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Amatic-sc', sans-serif;
@@ -10,12 +10,12 @@
 
 html {
   min-height: 100vh;
-  font-family:'Amatic-sc', sans-serif;
+  font-family: 'Amatic-sc', sans-serif;
 }
 
 body {
   margin: 0;
- background-image: url('../images/background-sky.jpg'); 
+  background-image: url('../images/background-sky.jpg');
 }
 
 .page-title {
@@ -44,7 +44,8 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: center;
-  perspective: 1000px;   /* to create a 3D flip effect -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+  perspective: 1000px; /* to create a 3D flip effect -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+  
 }
 
 .memory-card {
@@ -53,20 +54,21 @@ body {
   height: 100px;
   width: 100px;
   transform: scale(1);
-  transform-style: preserve-3d; /* to position the cards in the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+  transform-style: preserve-3d;/* to position the cards in the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
   transition: transform .5s;
 }
 
 .memory-card:active {
   transform: scale(.97);
   transition: transform .2s;
-} 
+}
 
 .memory-card.flip {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -79,12 +81,12 @@ body {
   border-width: 1px;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
-  backface-visibility: hidden;  
+  backface-visibility: hidden;
 }
 
 .card-front {
   transform: rotateY(180deg);
-  }
+}
 
 .hero-btn {
   display: inline-block;
@@ -111,7 +113,7 @@ body {
 
 .modal {
   /*Hidden by default */
-  display: none; 
+  display: none;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 99;
@@ -121,7 +123,7 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   .page-title {
     padding-top: 40px;
     font-size: 50px;
@@ -132,7 +134,6 @@ body {
     display: grid;
     margin-right: 20px;
     grid-gap: 15px;
-  
   }
 
   .memory-card {
@@ -148,14 +149,15 @@ body {
   }
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 414px) {
   .page-title {
     padding-top: 10px;
     font-size: 50px;
   }
+
   .game-info-container {
     padding: 0 10px 20px 10px;
-   }
+  }
 
   .game-container {
     display: grid;
@@ -163,7 +165,6 @@ body {
     margin-left: -1px;
     margin-bottom: 20px;
     grid-gap: 5px;
-  
   }
 
   .memory-card {
@@ -174,19 +175,19 @@ body {
   .modal {
     width: 400px;
     margin-top: -150px;
-    margin-left: -16px; 
-    height: 200vh;  
-
+    margin-left: -16px;
+    height: 200vh;
   }
+
   .modal-img {
     padding: 60px;
   }
 }
 
 
-/* Modal Content/Box */
+/* Modal Content Box */
 
-.modal-content {  
+.modal-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,13 +195,13 @@ body {
   background-color: #fff;
   margin: 200px auto;
   border: 0.8em solid #2376b9;
-  padding: 20px 40px; 
+  padding: 20px 40px;
   width: 80%;
   border-radius: 20px;
 }
 
 /* The Close Button */
- /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
 
 .close {
   align-self: flex-end;
@@ -222,4 +223,3 @@ body {
   margin: 1em 0 1em;
   width: 20em;
 }
-
