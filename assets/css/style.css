@@ -50,8 +50,8 @@ body {
 .memory-card {
   position: relative;
   cursor: pointer;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   transform: scale(1);
   transform-style: preserve-3d; /* to position the cards in the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
   transition: transform .5s;
@@ -121,7 +121,27 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
+  .page-title {
+    padding-top: 40px;
+    font-size: 50px;
+    margin: 20px;
+  }
+
+  .game-container {
+    display: grid;
+    width: 100vw;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    grid-gap: 15px;
+  
+  }
+
+  .memory-card {
+    height: 120px;
+    width: 120px;
+  }
+
   .modal {
     width: 500px;
     height: 300px;
@@ -130,9 +150,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 375px){
-
-
+@media only screen and (max-width: 414px){
   .page-title {
     padding-top: 10px;
     font-size: 50px;
@@ -144,16 +162,15 @@ body {
   .game-container {
     display: grid;
     width: 100vw;
-   margin-left: auto;
+    margin-left: -1px;
     margin-bottom: 20px;
-   
     grid-gap: 5px;
   
   }
 
   .memory-card {
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
   }
 
   .modal {
