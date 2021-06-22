@@ -8,7 +8,6 @@
   text-align: center;
 }
 
-
 html {
   min-height: 100vh;
   font-family:'Amatic-sc', sans-serif;
@@ -26,6 +25,7 @@ body {
   text-align: center;
   font-size: 6em;
 }
+
 /* https://stackoverflow.com/questions/47319464/make-a-grid-column-span-the-entire-row */
 .game-info-container {
   grid-column: 1 / -1;
@@ -53,13 +53,11 @@ body {
   height: 100px;
   width: 100px;
   transform: scale(1);
-  transform-style: preserve-3d; /* to position the cardsin the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+  transform-style: preserve-3d; /* to position the cards in the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
   transition: transform .5s;
 }
-/* need to fix bug of border showing properly change seudo class to active instead to give a zoom effect*/
+
 .memory-card:active {
-  /* box-shadow: inset 2px 2px 2px 10px white; */
-  /* box-sizing: border-box; */
   transform: scale(.97);
   transition: transform .2s;
 } 
@@ -81,13 +79,12 @@ body {
   border-width: 1px;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
-  backface-visibility: hidden;
-  
+  backface-visibility: hidden;  
 }
 
 .card-front {
   transform: rotateY(180deg);
-}
+  }
 
 .hero-btn {
   display: inline-block;
@@ -114,7 +111,7 @@ body {
 
 .modal {
   /*Hidden by default */
-  display: none; 
+  display: none;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 99;
@@ -123,34 +120,81 @@ body {
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (max-width: 600px){
+  .modal {
+    width: 500px;
+    height: 300px;
+    margin-left: calc(50vh - 250px);
+    margin-right: calc(50vh - 150px);
+  }
+}
+
+@media only screen and (max-width: 375px){
+
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  .page-title {
+    padding-top: 10px;
+    font-size: 50px;
+  }
+  .game-info-container {
+    padding: 0 40px 0 35px;
+  }
+
+  .game-container {
+    display: grid;
+    width: 100vw;
+   margin-left: auto;
+    margin-bottom: 20px;
+  }
+  .modal {
+    width: 400px;
+    margin-top: -150px;
+    margin-left: -16px;   
+
+  }
+  .modal-img {
+    padding: 60px;
+  }
+}
+
+
 /* Modal Content/Box */
-.modal-content {
-  
+
+.modal-content {  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  margin: 5% auto;
+  margin: 200px auto;
   border: 0.8em solid #2376b9;
-  padding: 2rem 4rem;
+  padding: 20px 40px; 
   width: 80%;
   border-radius: 20px;
 }
+
 /* The Close Button */
+ /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
+
 .close {
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
   align-self: flex-end;
   color: #28e;
   font-size: 5em;
 }
+
 .close:hover,
 .close:focus {
   color: #5cf;
   text-decoration: none;
   cursor: pointer;
 }
+
 /* Modal Image*/
+
 .modal-img {
   display: inline-block;
   margin: 1em 0 1em;
