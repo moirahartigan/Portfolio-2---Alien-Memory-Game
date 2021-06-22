@@ -121,7 +121,7 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
   .page-title {
     padding-top: 40px;
     font-size: 50px;
@@ -130,8 +130,6 @@ body {
 
   .game-container {
     display: grid;
-    width: 100vw;
-    margin-bottom: 30px;
     margin-right: 20px;
     grid-gap: 15px;
   
