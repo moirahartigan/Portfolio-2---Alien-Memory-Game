@@ -119,6 +119,7 @@ function resetBoard() {
 
 
 function winGame() {
+  stopTime();
   showWinMessage();
 }
 
