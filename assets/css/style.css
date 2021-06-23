@@ -166,7 +166,7 @@ body {
 /* for extra small devices */
 @media only screen and (max-width: 600px) { 
   .modal-content {
-   margin: 40px;
+    margin: 100px 40px;
   }
   .modal-img {
     width: 10em;
