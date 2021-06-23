@@ -211,5 +211,16 @@ p{
 .card-back {
   padding: 3px;
 }
+}
 
+/* 404 Error Page */
+
+.error {
+  background-image: url('../images/background-sky.jpg'); 
+ background-position: center center;
+ background-size: cover;
+ color: white;
+}
+.page-wrap {
+ min-height: 100vh;
 }
