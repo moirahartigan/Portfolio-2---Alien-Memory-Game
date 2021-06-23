@@ -216,10 +216,10 @@ p{
 /* 404 Error Page */
 
 .error {
-background-image: url('../images/background-sky.jpg'); 
- background-position: center center;
- background-size: cover;
- color: white;
+background-image: url('.../images/background-sky.jpg'); 
+background-position: center center;
+background-size: cover;
+color: white;
 }
 
 #span{
