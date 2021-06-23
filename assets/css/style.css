@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Kirang Haerang', cursive;
+  font-family: 'Permanent Marker', cursive;
   box-sizing: border-box;
   text-align: center;
 }
@@ -19,10 +19,10 @@ body {
 
 .page-title {
   color: #ff5100;
-  font-family: 'Kirang Haerang', cursive;
+  font-family: 'Permanent Marker', cursive;
   font-weight: normal;
   text-align: center;
-  font-size: 8em;
+  font-size: 6em;
 }
 
 /* https://stackoverflow.com/questions/47319464/make-a-grid-column-span-the-entire-row */
@@ -124,28 +124,20 @@ body {
   height: 100%;
 }
 
-h2{
-
-}
-
-p {
-  
-}
 /* Modal Content Box */
 
 .modal-content {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  margin: 200px auto;
+  margin: 200px 150px;
   border: 0.8em solid #2376b9;
   padding: 20px 40px;
-  width: 80%;
   border-radius: 20px;
 }
-
 /* The Close Button */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
 
@@ -171,113 +163,45 @@ p {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 800px) {
-  .page-title {
-    padding-top: 40px;
-    font-size: 6em;
-    margin: 20px;
+/* for extra small devices */
+@media only screen and (max-width: 600px) { 
+  .modal-content {
+   margin: 40px;
+  }
+  .modal-img {
+    width: 10em;
   }
 
-  .game-container {
-    display: grid;
-    margin-right: 20px;
-    grid-gap: 15px;    
-  }
-
-  .game-info-container {
-    padding: 30px;
-  }
-
-  .memory-card {
-    height: 120px;
-    width: 120px;
-  }
-
-  .modal {
-    /* width: 500px; 
-    height: 300px;
-    margin-left: calc(50vh - 250px);
-    margin-right: calc(50vh - 150px);
-  }
+.close {
+  font-size: 2.5em;
+  padding-bottom: 20px;
 }
-*/
-@media only screen and (max-width: 414px) {
-  .page-title {
-    padding-top: 10px;
-    font-size: 4em;
+
+.page-title {
+  margin: 20px;
+  font-size: 2.5em;
+}
+
+.game-info-container {
+  padding: 0 15px;
+  font-size: 10px;
   }
 
-  .game-info-container {
-    padding: 0 10px 0 10px;
-  }
+.game-container {
+  display: grid;
+  width: 100vw;
+  grid-gap: 5px;
+}
 
-  .game-container {
-    display: grid;
-    width: 100vw;
-    margin-left: -1px;
-    margin-bottom: 20px;
-    grid-gap: 5px;
-  }
+ .memory-card { 
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
 
-  .memory-card {
-    height: 80px;
-    width: 80px;
-  }
-
-  .card-front,
+.card-front,
 .card-back {
   padding: 3px;
 }
 
-  .modal {
-    width: 400px;
-    margin-top: -150px;
-    margin-left: 10px;
-    height: 200vh;
-  }
-
-  .modal-img {
-    padding: 60px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .page-title {
-    padding-top: 10px;
-    font-size: 3em;
-  }
-
-  .game-info-container {
-    padding: 0 15px;
-    font-size: 10px;
-  }
-
-  .game-container {
-    display: grid;
-    width: 100vw;
-    margin-left: -1px;
-    margin-bottom: 20px;
-    grid-gap: 5px;
-  }
-
-  .memory-card {
-    height: 60px;
-    width: 60px;
-  }
-
-  .card-front,
-.card-back {
-  padding: 3px;
-}
-
-  .modal {
-    width: 400px;
-    margin-top: -150px;
-    margin-left: -16px;
-    height: 200vh;
-  }
-
-  .modal-img {
-    padding: 60px;
-  }
 }
