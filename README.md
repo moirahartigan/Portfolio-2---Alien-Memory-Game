@@ -40,10 +40,11 @@ This is an outer space themed, flip card memory game for users of any age to pla
 
 ## User Stories
 * The user should see a grid style game with cards on display - these cards will have a front and back image.
-* The user should be able to click any two cards which are facing down (not yet flipped) to flip over and try to find a matched pair.
+* The user should only be able to click on two cards at a time, to try to find a matched pair.
+* The user should activate the timer once the first card has been flipped and when the second card has been flipped a move is logged.
 * The user should expect that once the game has been completed, the timer will stop.
 * The user should be receiving a message to confirm their win at the end of the game when all matched pairs have been found.  
-* The user should be able to close the pop up message at the end of the game with a click on the "x" button and the game will automatically reset for the next round.
+* The user should be able to close the pop up message at the end of the game with a click on the "x" button.
 * The user should have the option to reset the game at any time during play.
 * By playing this game the user should be able to test their memory skill in a fun environment.
 
@@ -232,11 +233,34 @@ I used Chromes Lighthouse tools to test the site's performance. I made sure to c
 ### <em>lighthouse Desktop</em>
 ![Desktop](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/lighthouse-desktop.png)
 
+
+## User stories Testing
+* Has a grid style game been displayed on page load? 
+  * Yes
+* Can the user only turn two cards at a time?
+  * Yes
+* Has the timer been activated once the first card has been flipped and when the second card has been flipped a move is logged?
+  * Yes
+* Does the timer stop when the game ends?
+  * Yes
+* Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
+  * Yes
+* Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
+  * Yes
+* Is the user able to close the pop up message at the end of the game with a click on the "x" button?
+  * Yes
+* Does the New Game button reset the game at any time during play.
+  * Yes
+* Is the users memory skill tested with this game?
+  * Yes
+
+All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
+
 ## Problems Encountered
 * Initially I considered using bootstrap to create my win message modal, however I decided against this and built the modal in the html file using a simple content division element. Once I had completed this and added the display: none attribute to the css class, the modal failed to appear on the screen.
   * I fixed this issue by removing the bootstrap link from the head section of my html page and the modal appeared as expected.
 
-* The first function writen was the flip card function which is the main play function for the game. As this function interacts with many other functions, I ran into some issues when trying to add additional features such as the timer and moves counter which required the flipping of one card for the timer to begin and the flipping of a second card to have the move counter begin. Each time I added this function my flipcard function broke and the game and the cards would not flip when clicked.
+* The first function written, was the flip card function which is the main play function for the game. As this function interacts with many other functions, I ran into some issues when trying to add additional features, such as the timer and moves counter, which required the flipping of one card for the timer to begin and the flipping of a second card to have the move counter begin. Each time I added this function my flipcard function broke and the game and the cards would not flip when clicked.
    * I fixed this issue by creating a test repo under my github account which allowed me to add and remove a number of options and test various functions together without breaking my existing main play function - it soon became clear that i was placing my call functions in the wrong place which inturn was breaking my game.    
 
 ***
