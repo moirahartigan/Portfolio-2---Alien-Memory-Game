@@ -265,7 +265,7 @@ This site was deployed through GitHub Pages using the following steps:
 * [github docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) was used to create the 404 page.
 
 ## Media
-* Card cocktail images were cropped from this image from freepik.com
+* Animated Alien images were cropped from this image from freepik.com
     * [freepik](https://www.freepik.com/free-vector/monsters-set-cartoon-cute-character-isolated-white-background_13031453.htm#page=1&query=alien&position=10)
   
 ## Acknowledgements
