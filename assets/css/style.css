@@ -216,10 +216,18 @@ p{
 /* 404 Error Page */
 
 .error {
-  background-image: url('../images/background-sky.jpg'); 
+background-image: url('../images/background-sky.jpg'); 
  background-position: center center;
  background-size: cover;
  color: white;
+}
+
+.oops {
+  color:#ff5100;
+  font-size: 8em;
+}
+span{
+  color:#FFBB89;
 }
 .page-wrap {
  min-height: 100vh;
