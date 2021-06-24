@@ -192,6 +192,14 @@ p{
 /* Media Queries */
 /* for extra small devices */
 @media only screen and (max-width: 600px) { 
+  .rules-card {
+    border: 0.5em solid #2376b9;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px 15px 15px;
+    padding: 0 25px 10px;
+  }
+
   .modal-content {
     margin: 80px 40px;
   }
@@ -237,6 +245,15 @@ p{
 }
 
 @media (min-width: 1400px) {
+  .rules-card {
+    border: 0.8em solid #2376b9;
+    background-color: white;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 100px;
+    justify-content: center;
+  }
+
   .modal {
       padding: 0 350px;   
   }
@@ -257,7 +274,16 @@ p{
   
   }
   
-  @media (min-width: 780px) {    
+  @media (min-width: 780px) { 
+    .rules-card {
+      border: 0.8em solid #2376b9;
+      background-color: white;
+      border-radius: 20px;
+      margin: 100px;
+      padding: 100px;
+      justify-content: center;
+    }
+
     .modal-content {
       padding: 20px;
       margin: 100px 200px;
