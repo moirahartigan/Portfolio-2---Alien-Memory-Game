@@ -142,6 +142,7 @@ p{
   padding: 20px 40px;
   border-radius: 20px;
 }
+
 /* The Close Button */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
 
@@ -211,5 +212,44 @@ p{
 .card-back {
   padding: 3px;
 }
-
 }
+
+/* media for larger screens */
+@media (min-width: 1400px) {
+  .modal {
+      padding: 0 350px;   
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-img {
+    margin: 1em 0 1em;
+    width: 10em;
+  }
+  
+  .close {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+  }  
+  }
+  
+  /* media for smaller desktop screens */
+  @media (min-width: 600px) {
+    .modal-content {
+      padding: 20px;
+      margin: 100px 200px;
+    }
+    
+    .modal-img {
+      margin: 1em 0 1em;
+      width: 10em;
+    }
+    
+    .close {
+      font-size: 2.5em;
+      padding-bottom: 20px;
+    }
+    
+    }
