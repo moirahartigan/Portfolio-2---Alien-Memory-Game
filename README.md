@@ -5,6 +5,7 @@
 
 <h2 align="center">Portfolio Project 2: _Interactive Front-End Development_</h2>
 This is an outer space themed, flip card memory game for users of any age to play and enjoy.
+
 ## Demo
 
 [View the Live Website Here](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
@@ -30,6 +31,7 @@ This is an outer space themed, flip card memory game for users of any age to pla
 + [Testing](#testing)
   + [Validator Testing](#validator-testing)
   + [Lighthouse Testing](#lighthouse-testing)
+  + [Responsiveness](#responsiveness)
   + [Problems encountered](#problems-encountered)
 + [Deployment](#deployment)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
@@ -259,6 +261,10 @@ The following devices were tested:
 - iPad Pro
 - Surface Duo
 - Galaxy Fold
+
+<p align="center">  
+  <img src="">
+ </p>
 
 ## User stories Testing
 * Has a grid style game been displayed on page load? 
