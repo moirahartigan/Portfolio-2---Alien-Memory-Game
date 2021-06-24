@@ -1,8 +1,13 @@
-// define variables
+/**
+ * GENERAL VARIABLES
+ */
 const cards = document.querySelectorAll('.memory-card');
+const moveContainer = document.querySelector(".moves")
+const modal = document.getElementById('modal');
+const timeContainer = document.querySelector(".timer");
+
 let gameOn = false;
 let perfectMatch = 0;
-
 let flippedCard = false; //used to check if card has already been clicked 
 let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
 let firstCard, secondCard; //Used to check for cards match
@@ -55,8 +60,6 @@ function pairMatch() {
 
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-
-
     resetBoard();
 }
 
@@ -73,11 +76,9 @@ function noMatch() {
 
 // Add move
     addMove();
-
 }
 
 //Move counter
-const moveContainer = document.querySelector(".moves");
 moves = 0;
 moveContainer.innerHtml = 0;
 
@@ -87,7 +88,6 @@ function addMove() {
 }
 
 //timer
-const timeContainer = document.querySelector(".timer");
 let time;
 let minutes = 0;
 let seconds = 0;
@@ -104,7 +104,6 @@ function timer() {
     timeContainer.innerHTML = "Timer " + minutes + " : " + seconds;
   }, 1000);
 }
-
 
 function stopTime() {
     clearInterval(time);
@@ -123,9 +122,6 @@ function winGame() {
 }
 
 // Modal pop up 
-const modal = document.getElementById('modal');
-
-
 function showWinMessage() {
     modal.style.display = "block";
     reset();
