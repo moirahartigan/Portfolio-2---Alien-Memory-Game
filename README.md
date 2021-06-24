@@ -1,10 +1,9 @@
-<div align ="center">
-<h1>Alien Memory</h1>
-</div>
+# Alien Memory
 
 
-<h2 align="center">Portfolio Project 2: _Interactive Front-End Development_</h2>
-This is an outer space themed, flip card memory game for users of any age to play and enjoy.
+## Portfolio Project 2: _Interactive Front-End Development_
+This is an outer space themed, flip card memory game. The game has been designed for users of any age to play and enjoy.
+
 
 ## Demo
 
@@ -57,7 +56,7 @@ This is an outer space themed, flip card memory game for users of any age to pla
 
 ## Design
 
-The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This can allow any player to tract their time, without adding pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
+The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This can allow any player to track their time, without adding the pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
 
 <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-grid.png">
@@ -69,15 +68,19 @@ The goal of this project is to build a fun interactive memory game where the use
 The game layout has been kept simple, using a 4x4 style grid, with a total of 16 cards. The game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet or mobile view without changing the look of the game. 
 
 <br>
-<br>
 
+#### <em>mobile</em>
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/mobile%20responsive.png">
  </p>
 
-<br>
-<br>
 
+#### <em>tablet</em>
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/tablet-responsiveness.png">
+ </p>
+ 
+ 
 ### Overall Feel 
 
 This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the colour scheme was chosen mirror this feeling.
@@ -142,13 +145,13 @@ The colour scheme was chosen to tie in with the outer space theme, as the backgr
  
  <br>
  
-A bright orange colour was chosen to highlight the "New Game" button and this colour was matched to the game title for consistancy.
+A bright orange colour was chosen to highlight the buttos and this colour was matched to the game title for consistancy.
 
 <br>
 <br>
 
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/new-game-button.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/nav%20buttons.png">
  </p>
  
  <br>
@@ -262,10 +265,6 @@ The following devices were tested:
 - Surface Duo
 - Galaxy Fold
 
-<p align="center">  
-  <img src="">
- </p>
-
 ## User stories Testing
 * Has a grid style game been displayed on page load? 
   * Yes - works as expected.
@@ -287,6 +286,8 @@ The following devices were tested:
   * Yes - works as expected.
 
 All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
+
+Furthermore the game has been tested by my younger children whom are aged 5 and 6. They were able to play the game without instruction from an adult which was one of the core goals of the design. Other adult friends and family also tried the game on their personal devices to comfirm responsiveness but all reported to have enjoyed playing this game.
 
 ## Problems Encountered
 * Initially I considered using bootstrap to create my win message modal, however I decided against this and built the modal in the html file using a simple content division element. Once I had completed this and added the display: none attribute to the css class, the modal failed to appear on the screen.
@@ -316,10 +317,11 @@ This site was deployed through GitHub Pages using the following steps:
 ***
 # Credits
 ## Code
-* The Code Institute material was the main source of information used to create this project.
+* [Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) this tutorial was followed and some JavaScript code was taken and adapted to my game.
+* [scotch](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) inspiration was also taken from this tutorial for the timer function.
+* [youtube](https://www.youtube.com/watch?v=28VfzEiJgy4) inspiration was taken from this tutorial.
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
 * [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) was used as a general source of knowledge.
-* [youtube](https://www.youtube.com/watch?v=44axq8Absis) This tutorial was used to learn how to achieve a transparent navigation bar.
 * [Stack Overflow](https://stackoverflow.com/) was used to assist during debugging.
 * [github docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) was used to create the 404 page.
 
