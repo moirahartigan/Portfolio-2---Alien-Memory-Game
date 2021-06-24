@@ -110,6 +110,29 @@ body {
   transition: 1s;
 }
 
+/* How to play instructions */
+.rules-card {
+  border: 0.8em solid #2376b9;
+  background-color: white;
+  border-radius: 20px;
+  margin: 100px;
+  padding: 100px;
+  justify-content: center;
+}
+
+.rules-list {
+  font-weight: 600;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.rules-list li {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 25px;
+  color: black;
+  text-align: center;
+}
+
 /* game-over modal */
 
 .modal {
@@ -212,6 +235,43 @@ p{
   padding: 3px;
 }
 }
+
+@media (min-width: 1400px) {
+  .modal {
+      padding: 0 350px;   
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-img {
+    margin: 1em 0 1em;
+    width: 10em;
+  }
+  
+  .close {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+  }
+  
+  }
+  
+  @media (min-width: 780px) {    
+    .modal-content {
+      padding: 20px;
+      margin: 100px 200px;
+    }
+    
+    .modal-img {
+      width: 10em;
+    }
+    
+    .close {
+      font-size: 2.5em;
+      padding-bottom: 20px;
+    }    
+    }
 
 /* 404 Error Page */
 

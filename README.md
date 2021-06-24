@@ -1,4 +1,4 @@
-<div align="center">
+<div text-align ="center">
 <h1>Alien Memory</h1>
 </div>
 
@@ -8,7 +8,7 @@ This is an outer space themed, flip card memory game for users of any age to pla
 ## Demo
 
 [View the Live Website Here](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
-<p align="center"> 
+<p text-align ="center"> 
 <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/am-i-responsive.png">
 </p>
 
@@ -57,7 +57,7 @@ This is an outer space themed, flip card memory game for users of any age to pla
 
 The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This can allow any player to tract their time, without adding pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
 
-<p align="center">  
+<p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-grid.png">
  </p>
  
@@ -69,7 +69,7 @@ The game layout has been kept simple, using a 4x4 style grid, with a total of 16
 <br>
 <br>
 
- <p align="center">  
+ <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/mobile%20responsive.png">
  </p>
 
@@ -83,7 +83,7 @@ This memory game has been designed to challenge the user within a fun environmen
 <br>
 <br>
 
- <p align="center">  
+ <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/background-screenshot.png">
  </p>
  
@@ -94,7 +94,7 @@ Alien spaceships were used as the card back image and each spaceship housed an a
 <br>
 <br>
 
-<p align="center">  
+<p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/card-front-screenshot.png">
  </p>
  
@@ -102,7 +102,7 @@ Alien spaceships were used as the card back image and each spaceship housed an a
  <br>
  
  The Alien characters were selected to add additional colour to the game once the cards had been flipped.
- <p align="center">  
+ <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-charactors.jpg">
  </p>
 
@@ -114,7 +114,7 @@ Alien spaceships were used as the card back image and each spaceship housed an a
  <br>
  <br>
  
- <p align="center">  
+ <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/win-modal.png">
  </p>
  
@@ -124,7 +124,7 @@ Alien spaceships were used as the card back image and each spaceship housed an a
  
  <br>
  
- <p align="center">  
+ <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/close-button-screenshot.png">
  </p>
  
@@ -134,7 +134,7 @@ Alien spaceships were used as the card back image and each spaceship housed an a
 The colour scheme was chosen to tie in with the outer space theme, as the background image is a dark sky, bright vibrant colours were selected to stand out in contract to the background.  
 <br>
 <br>
-<p align="center">  
+<p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
  </p>
  
@@ -145,7 +145,7 @@ A bright orange colour was chosen to highlight the "New Game" button and this co
 <br>
 <br>
 
-<p align="center">  
+<p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/new-game-button.png">
  </p>
  
@@ -157,7 +157,7 @@ A bright orange colour was chosen to highlight the "New Game" button and this co
  <br>
  <br>
  
- <p align="center">  
+ <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/timer.png">           <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/moves-counter.png">
  </p>
  
@@ -220,13 +220,13 @@ At the completion or heavy editing of sections, I used the following to check my
 
 ### <em>HTML Validator</em>
 
-  <p align="center">  
+  <p text-align="center">  
  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/html-validator.png"> 
  </p>
   
 ### <em>CSS Validator</em>
 
-  <p align="center">  
+  <p text-align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/css-validator.png">
  </p>
     
