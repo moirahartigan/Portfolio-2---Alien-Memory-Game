@@ -115,7 +115,7 @@ body {
   border: 0.8em solid #2376b9;
   background-color: white;
   border-radius: 20px;
-  margin: 100px;
+  margin: 100px 550px 100px;
   padding: 100px;
   justify-content: center;
 }
@@ -137,7 +137,7 @@ body {
 
 .modal {
   /*Hidden by default */
-  display: none;
+  /* display: none; */
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 99;
@@ -266,8 +266,8 @@ p{
   
   }
   
-  @media (min-width: 780px) { 
-    .rules-card {
+  @media (min-width: 768px) { 
+    .rules-card {  
       border: 0.8em solid #2376b9;
       background-color: white;
       border-radius: 20px;
@@ -276,21 +276,7 @@ p{
       justify-content: center;
     }
 
-    .modal-content {
-      padding: 20px;
-      margin: 100px 200px;
-    }
-    
-    .modal-img {
-      width: 10em;
-    }
-    
-    .close {
-      font-size: 2.5em;
-      padding-bottom: 20px;
-    }    
-    }
-
+  
 /* 404 Error Page */
 
 .error {
