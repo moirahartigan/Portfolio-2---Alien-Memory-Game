@@ -112,6 +112,7 @@ body {
 
 /* How to play instructions */
 .rules-card {
+  font-family: 'Roboto', sans-serif;
   border: 0.8em solid #2376b9;
   background-color: white;
   border-radius: 20px;

@@ -3,7 +3,7 @@
 </div>
 
 
-## Portfolio Project 2: _Interactive Front-End Development_
+<h2 align="center">Portfolio Project 2: _Interactive Front-End Development_</h2>
 This is an outer space themed, flip card memory game for users of any age to play and enjoy.
 ## Demo
 
@@ -163,7 +163,7 @@ A bright orange colour was chosen to highlight the "New Game" button and this co
  
 ### Typography
 
-The font-families chosen are Permanent Marker and Roboto. I used Roboto on the win message text as I felt this font complimented the perminant marker font and suited it purpose as an informational message.
+The font-families chosen are Permanent Marker and Roboto. I used Roboto on the instructions page text and the win message modal, as I felt this font complimented the perminant marker font and suited its purpose, on the informational messages.
 
 <br>
 <br>
@@ -181,10 +181,12 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 # Features
 
 ## Current Features
-+ When a player starts a game, a displayed stopwatch timer start and once the player wins the game, the timer stops.
-+ A moves tracker counts each pair match attempt made and starts the count when the second card had been flipped. 
-+ A New Game button allows the user to reset the game board at any time during the game, the timer and the moves counter will return to 0.
++ Game instructions are available to the user by clicking the "How to Play" button.
++ When a player starts a game, a displayed stopwatch timer starts and once the player wins the game, the timer stops.
++ A moves tracker, counts each pair match attempt made, and starts the count when the second card had been flipped. 
++ A New Game button allows the user to reset the game board at any time during the game; the timer and the moves counter will return to 0.
 + A win message appears when the user wins the game and matches all 8 pairs.
+
 
 ## Future Features
 + I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
