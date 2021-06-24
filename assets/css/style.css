@@ -203,6 +203,7 @@ p{
   .modal-content {
     margin: 80px 40px;
   }
+
   .modal-img {
     width: 10em;
   }
@@ -245,15 +246,6 @@ p{
 }
 
 @media (min-width: 1400px) {
-  .rules-card {
-    border: 0.8em solid #2376b9;
-    background-color: white;
-    border-radius: 20px;
-    margin: 100px;
-    padding: 100px;
-    justify-content: center;
-  }
-
   .modal {
       padding: 0 350px;   
   }
@@ -279,8 +271,8 @@ p{
       border: 0.8em solid #2376b9;
       background-color: white;
       border-radius: 20px;
-      margin: 100px;
-      padding: 100px;
+      margin: 10px 50px 10px;
+      padding: 50px;
       justify-content: center;
     }
 
