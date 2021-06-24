@@ -317,7 +317,7 @@ This site was deployed through GitHub Pages using the following steps:
 ***
 # Credits
 ## Code
-* [Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) this tutorial was followed and some JavaScript code was taken and adapted to my game.
+* [free Code Camp](https://marina-ferreira.github.io/tutorials/js/memory-game/) this tutorial was followed and some JavaScript code was taken and adapted to my game.
 * [scotch](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) inspiration was also taken from this tutorial for the timer function.
 * [youtube](https://www.youtube.com/watch?v=28VfzEiJgy4) inspiration was taken from this tutorial.
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
