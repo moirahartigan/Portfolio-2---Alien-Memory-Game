@@ -1,4 +1,8 @@
-# Alien Memory
+<div align="center">
+<h1>Alien Memory</h1>
+</div>
+
+
 ## Portfolio Project 2: _Interactive Front-End Development_
 This is an outer space themed, flip card memory game for users of any age to play and enjoy.
 ## Demo
@@ -194,15 +198,18 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 
 ## Languages Used
 1. [HTML](https://en.wikipedia.org/wiki/HTML5) - To create a basic site.
-2. [CSS](https://en.wikipedia.org/wiki/CSS) - To create a nice style and to stand-out.
-3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - To make the game work.
+2. [CSS](https://en.wikipedia.org/wiki/CSS) - To create the look for the game.
+3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - For the logic of the game. To manipulate the HTML and CSS on the screen..
 
 ## Frameworks Libraries and Programmes Used
 * [Google Fonts](https://fonts.google.com/) - to import the font-family used in the website: Playfair Display and Courgette.
+* [jQuery](https://en.wikipedia.org/wiki/JQuery)- to manipulate the HTML and CSS on the screen.
+* [Balsamiq Wireframes](https://balsamiq.com/wireframes/)- for creating Wireframes for initial visual development
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
-* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - for performance review.
+* [Google Chrome Development Tools](https://developers.google.com/web/tools/chrome-devtools) - for testing code on various device sizes during development and debugging.
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - for testing code health, accessibility, speed and search engine optimisation..
 
 ***
 ***
@@ -233,26 +240,43 @@ I used Chromes Lighthouse tools to test the site's performance. I made sure to c
 ### <em>lighthouse Desktop</em>
 ![Desktop](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/lighthouse-desktop.png)
 
+## Responsiveness
+Chrome DevTools was used to test the games responsivesness.
+
+
+The following devices were tested:
+- Moto 4
+- Galaxy S5
+- Pixel 2
+- Pixel 2 XL
+- iPhone 5/SE
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+- iPad Pro
+- Surface Duo
+- Galaxy Fold
 
 ## User stories Testing
 * Has a grid style game been displayed on page load? 
-  * Yes
+  * Yes - works as expected.
 * Can the user only turn two cards at a time?
-  * Yes
+  * Yes - works as expected.
 * Has the timer been activated once the first card has been flipped and when the second card has been flipped a move is logged?
-  * Yes
+  * Yes - works as expected.
 * Does the timer stop when the game ends?
-  * Yes
+  * Yes - works as expected.
 * Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
-  * Yes
+  * Yes - works as expected.
 * Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
-  * Yes
+  * Yes - works as expected.
 * Is the user able to close the pop up message at the end of the game with a click on the "x" button?
-  * Yes
+  * Yes - works as expected.
 * Does the New Game button reset the game at any time during play.
-  * Yes
+  * Yes - works as expected.
 * Is the users memory skill tested with this game?
-  * Yes
+  * Yes - works as expected.
 
 All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
 
@@ -261,7 +285,10 @@ All user stories have been fullfilled from the original targets. The game functi
   * I fixed this issue by removing the bootstrap link from the head section of my html page and the modal appeared as expected.
 
 * The first function written, was the flip card function which is the main play function for the game. As this function interacts with many other functions, I ran into some issues when trying to add additional features, such as the timer and moves counter, which required the flipping of one card for the timer to begin and the flipping of a second card to have the move counter begin. Each time I added this function my flipcard function broke and the game and the cards would not flip when clicked.
-   * I fixed this issue by creating a test repo under my github account which allowed me to add and remove a number of options and test various functions together without breaking my existing main play function - it soon became clear that i was placing my call functions in the wrong place which inturn was breaking my game.    
+   * I fixed this issue by creating a test repo under my github account which allowed me to add and remove a number of options and test various functions together without breaking my existing main play function - it soon became clear that i was placing my call functions in the wrong place which inturn was breaking my game.
+
+* When the game loaded the timer was starting on page load and not on the first click of a card.
+  *  I fixed this by using the .onclick() event in the div for the timer. 
 
 ***
 ***
@@ -295,6 +322,7 @@ This site was deployed through GitHub Pages using the following steps:
 ## Acknowledgements
 * I would like to thank the Slack Community for their endless support.
 * I would like to thank Kasia Bogucka our class cohort facilitator for her constant assistance and encouragement.
+* I would like to thank my children for testing the game and my husband for his support and allowing me some child free time to work on this project.
 * Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this portfolio project.
  
 
