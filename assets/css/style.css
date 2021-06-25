@@ -111,7 +111,19 @@ body {
 }
 
 /* How to play instructions */
-.rules-card {
+
+.instructions {
+  display:none;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rules-card {   
   font-family: 'Roboto', sans-serif;
   border: 0.8em solid #2376b9;
   background-color: white;
@@ -138,7 +150,7 @@ body {
 
 .modal {
   /*Hidden by default */
-  display: none; 
+  display: none;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 99;
@@ -167,7 +179,7 @@ p{
   border-radius: 20px;
 }
 
-/* The Close Button */
+/* The Modal Close Buttons */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
 
 .close {
@@ -183,6 +195,19 @@ p{
   cursor: pointer;
 }
 
+.close-instructions {
+  align-self: flex-end;
+  color: #28e;
+  font-size: 5em;
+}
+
+.close-instructions:hover,
+.close-instructions:focus {
+  color: #5cf;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Modal Image*/
 
 .modal-img {
@@ -191,16 +216,26 @@ p{
   width: 20em;
 }
 
+
 /* Media Queries */
 /* for extra small devices */
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
+  .instructions-modal {
+    margin: 0;
+  }
+  
   .rules-card {
     margin: 5px 15px 15px;
-    padding: 0 25px 10px;
+    padding: 0 20px 10px;
+  }
+
+  .modal {
+    margin: 0;
   }
 
   .modal-content {
-    margin: 80px 40px;
+    margin: 20px 20px 40px;
+    padding: 20px;
   }
 
   .modal-img {
@@ -246,6 +281,7 @@ p{
 .hero-btn {
   font-size: 15px;
 }
+}
 
 /* media for larger screens */
 @media (min-width: 1400px) {
@@ -266,47 +302,6 @@ p{
     font-size: 2.5em;
     padding-bottom: 20px;
   }  
-  }
-  
-  /* media for smaller desktop screens */
-  @media (max-width: 600px) {
-    .modal-content {
-      padding: 20px;
-      /* margin: 100px 200px; */
-    }
-    
-    .modal-img {
-      margin: 1em 0 1em;
-      width: 10em;
-    }
-    
-    .close {
-      font-size: 2.5em;
-      padding-bottom: 20px;
-    } 
-    .hero-btn {
-      font-size: 15px;
-    }
-    }
-
-@media (min-width: 1400px) {
-  .modal {
-      padding: 0 350px;   
-  }
-  
-  .modal-content {
-    padding: 20px;
-  }
-  
-  .modal-img {
-    margin: 1em 0 1em;
-    width: 10em;
-  }
-  
-  .close {
-    font-size: 2.5em;
-    padding-bottom: 20px;
-  }
 
   .rules-card {  
     margin: 100px 500px 100px;
@@ -321,12 +316,7 @@ p{
     }
   } 
 
-    /* @media (min-width: 1400px) {  
-      .rules-card {  
-        margin: 100px 500px 100px;
-        padding: 50px;
-      } 
-    }*/
+
   
 /* 404 Error Page */
 

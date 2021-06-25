@@ -114,13 +114,39 @@
     </div>
   </div>
 
-  <!-- New Game again -->
+  <!-- Reset Game again -->
   <div>
-    <button class="hero-btn" onclick="reset()">New Game</button> <a href="how-to-play.html"><button class="hero-btn">How to Play</button></a>
+    <button class="hero-btn" onclick="reset()">Reset Game</button> <button id="modalBtn" class="hero-btn">How to Play</button>
   </div>
 
+  <!--instructions Modal -->
+  <section>
+  <div class="instructions" id="instructions">
+    <div>
+        <div>
+            <h2 class="page-title">How to play:</h2>
+        </div>
+    </div>
+    <div>
+        <div class="rules-card">
+            <div class="card-body">
+              <span id="closeBtn" class="close-instructions">&times;</span>
+                <ol class="rules-list">
+                    <li>To begin the game, click on any card to flip it over</li>
+                    <li>Only two cards at a time can be flipped</li>
+                    <li>You need to find all 8 pairs to complete the game.</li>
+                    <li>Restart the game and try beat your time or the number of moves taken!</li>
+                </ol>
+                <p class="good-luck"><strong>GOOD LUCK!</strong></p>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+</div>
+</section> 
 
-  <!-- Modal -->
+  <!-- Win Message Modal -->
   <section class="win-msg">
     <div class="modal" id="modal">
       <!-- modal content -->

@@ -3,9 +3,11 @@
  */
 const cards = document.querySelectorAll('.memory-card');
 const moveContainer = document.querySelector(".moves");
+
 const modal = document.getElementById('modal');
 const timeContainer = document.querySelector(".timer");
 const MAX_MATCH = 8;
+
 
 let gameOn = false;
 let perfectMatch = 0;
@@ -14,8 +16,31 @@ let lockBoard = false; // used to lock the board until each set of cards are fin
 let firstCard, secondCard; //Used to check for cards match
 let moves = 0;
 
+
+
 cards.forEach(card => card.addEventListener('click', flipCard));
 shuffle();
+
+const instructions = document.getElementById('instructions');
+let modalBtn = document.getElementById("modalBtn");
+let closeBtn = document.getElementById("closeBtn");
+
+
+// listen for open click of how to play instructions modal
+modalBtn.addEventListener('click', showInstructions);
+// close instructions button
+closeBtn.addEventListener('click', closeInstructions);
+
+
+function showInstructions() {
+    instructions.style.display = "block";    
+    }
+
+// when the user clicks the (x) To close instructions-modal
+function closeInstructions() {
+    instructions.style.display = "none";  
+}
+
 
 /*
 onclick function for cards, add flip class for css effects
@@ -125,7 +150,8 @@ function winGame() {
     showWinMessage();
 }
 
-// Modal pop up 
+
+// Win message pop up 
 function showWinMessage() {
     modal.style.display = "block";
     reset();
