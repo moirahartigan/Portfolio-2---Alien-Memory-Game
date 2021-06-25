@@ -9,7 +9,7 @@ This is an outer space themed, flip card memory game. The game has been designed
 
 [View the Live Website Here](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
 <p align ="center"> 
-<img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/am-i-responsive.png">
+<img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/am-i-responsive.png">
 </p>
 
 
@@ -59,7 +59,7 @@ This is an outer space themed, flip card memory game. The game has been designed
 The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This can allow any player to track their time, without adding the pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
 
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-grid.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/game-grid.png">
  </p>
  
 <br>
@@ -71,15 +71,19 @@ The game layout has been kept simple, using a 4x4 style grid, with a total of 16
 
 #### <em>mobile</em>
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/mobile%20responsive.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/mobile%20responsive.png">
  </p>
 
 
 #### <em>tablet</em>
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/tablet-responsiveness.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/tablet-responsiveness.png">
  </p>
  
+ #### <em>tablet - landscape view </em>
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/tablet-landscape.png">
+ </p>
  
 ### Overall Feel 
 
@@ -89,7 +93,7 @@ This memory game has been designed to challenge the user within a fun environmen
 <br>
 
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/background-screenshot.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/background-screenshot.png">
  </p>
  
  <br>
@@ -100,7 +104,7 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
 <br>
 
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/card-front-screenshot.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/card-front-screenshot.png">
  </p>
  
  <br>
@@ -108,7 +112,7 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
  
  The Alien characters were selected to add additional fun and colour to the game once the cards had been flipped. The images were croped to size for consistancy and ease of styling.
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-charactors.jpg">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/game-charactors.jpg">
  </p>
 
 <br>
@@ -120,7 +124,7 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
  <br>
  
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/win-modal.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/win-modal.png">
  </p>
  
  <br>
@@ -130,7 +134,7 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
  <br>
  
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/close-button-screenshot.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/close-button-screenshot.png">
  </p>
  
 <br>
@@ -140,7 +144,7 @@ The colour scheme was chosen to tie in with the outer space theme, as the backgr
 <br>
 <br>
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/color-scheme.png">
  </p>
  
  <br>
@@ -151,7 +155,7 @@ A bright orange colour was chosen to highlight the buttos and this colour was ma
 <br>
 
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/nav%20buttons.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/nav%20buttons.png">
  </p>
  
  <br>
@@ -163,7 +167,7 @@ A bright orange colour was chosen to highlight the buttos and this colour was ma
  <br>
  
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/timer.png">           <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/moves-counter.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/game-info.png">
  </p>
  
 ### Typography
@@ -177,10 +181,10 @@ The font-families chosen are Permanent Marker and Roboto. I used Roboto on the i
 
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display. 
 
-[Wireframe for Tablet & Mobile- Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-game-mobile%26tablet.png)    
-[Wireframe for Tablet & Mobile- Win Game message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-mobile%26tablet-win-game.png)  
-[Wireframe for Desktop - Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-game-desktop.png)
-[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/wireframes/wireframe-win-game-desktop.png) 
+[Wireframe for Tablet & Mobile- Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-mobile%26tablet.png)    
+[Wireframe for Tablet & Mobile- Win Game message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-mobile%26tablet-win-game.png)  
+[Wireframe for Desktop - Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-desktop.png)
+[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-win-game-desktop.png) 
 ***
 ***
 # Features
@@ -228,13 +232,13 @@ At the completion or heavy editing of sections, I used the following to check my
 ### <em>HTML Validator</em>
 
   <p align="center">  
- <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/html-validator.png"> 
+ <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/html-validator.png"> 
  </p>
   
 ### <em>CSS Validator</em>
 
   <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/css-validator.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/css-validator.png">
  </p>
     
     
@@ -243,9 +247,9 @@ At the completion or heavy editing of sections, I used the following to check my
 ## Lighthouse Testing
 I used Chromes Lighthouse tools to test the site's performance. I made sure to check both desktop and mobile performances. Below are the screenshots from both tests:
 ### <em>lighthouse Mobile</em>
-![Mobile](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/lighthouse-mobile.png)
+![Mobile](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/lighthouse-mobile.png)
 ### <em>lighthouse Desktop</em>
-![Desktop](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/lighthouse-desktop.png)
+![Desktop](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/lighthouse-desktop.png)
 
 ## Responsiveness
 Chrome DevTools was used to test the games responsivesness.
@@ -263,7 +267,6 @@ The following devices were tested:
 - iPad
 - iPad Pro
 - Surface Duo
-- Galaxy Fold
 
 ## User stories Testing
 * Has a grid style game been displayed on page load? 
