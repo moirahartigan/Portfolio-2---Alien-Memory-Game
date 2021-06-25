@@ -31,7 +31,7 @@ This is an outer space themed, flip card memory game. The game has been designed
   + [Lighthouse Testing](#lighthouse-testing)
   + [Responsiveness](#responsiveness)
   + [Testing User Stories](#testing-user-stories)
-  + [Problems encountered](#problems-encountered)
+  + [Problems Encountered](#problems-encountered)
 + [Deployment](#deployment)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
 + [Credits](#credits)
@@ -41,7 +41,7 @@ This is an outer space themed, flip card memory game. The game has been designed
   
 ***
 ***
-# User Experience (UX)
+# User Experience
 
 ## User Stories
 * The user should see a grid style game with cards on display - these cards will have a front and back image.
@@ -207,23 +207,6 @@ As this is a game and most likely to be played on mobile devices, the game has b
  </p>
 
 
-+ Game instructions are available to the user by clicking the "How to Play" button.
-+ When a player starts a game, a displayed stopwatch timer starts and once the player wins the game, the timer stops.
-+ A moves tracker, counts each pair match attempt made, and starts the count when the second card had been flipped. 
-+ A New Game button allows the user to reset the game board at any time during the game; the timer and the moves counter will return to 0.
-+ A win message appears when the user wins the game and matches all 8 pairs.
-
-
- 
-
-
- 
- 
- 
- 
- 
- 
- 
 ## Future Features
 + I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
 + I would like to add a mute button to allow the user to control the sound effects.
@@ -295,7 +278,7 @@ The following devices were tested:
 - iPad Pro
 - Surface Duo
 
-## Testing User Stories from User Experience (UX) Section
+## Testing User Stories
 * The user should see a grid style game with cards on display - these cards will have a front and back image.
     * Users are automatically greeted with a 4x4 grid style game with a game title and clear navigation buttons.
 * The user should only be able to click on two cards at a time, to try to find a matched pair.
