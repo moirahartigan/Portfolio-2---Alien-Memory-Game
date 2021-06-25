@@ -250,6 +250,49 @@ p{
     .close {
       font-size: 2.5em;
       padding-bottom: 20px;
+    }    
     }
-    
-    }
+
+    @media (min-width: 1400px) {
+      .modal {
+          padding: 0 350px;   
+      }
+      
+      .modal-content {
+        padding: 20px;
+      }
+      
+      .modal-img {
+        margin: 1em 0 1em;
+        width: 10em;
+      }
+      
+      .close {
+        font-size: 2.5em;
+        padding-bottom: 20px;
+      }
+      
+      }
+      
+      @media (min-width: 780px) {
+        .modal {
+            /* padding: 0 200px; 
+            margin: 100px;   */
+        }
+        
+        .modal-content {
+          padding: 20px;
+          margin: 100px 200px;
+        }
+        
+        .modal-img {
+          margin: 1em 0 1em;
+          width: 10em;
+        }
+        
+        .close {
+          font-size: 2.5em;
+          padding-bottom: 20px;
+        }
+        
+        }

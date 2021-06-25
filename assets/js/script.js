@@ -69,7 +69,7 @@ function noMatch() {
         secondCard.classList.remove('flip');
 
         resetBoard();
-  },  900);
+  },  1000);
 
 // Add move
     addMove();
