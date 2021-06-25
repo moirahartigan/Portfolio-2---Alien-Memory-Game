@@ -31,6 +31,7 @@ This is an outer space themed, flip card memory game. The game has been designed
   + [Validator Testing](#validator-testing)
   + [Lighthouse Testing](#lighthouse-testing)
   + [Responsiveness](#responsiveness)
+  + [Testing User Stories](#testing-user-stories)
   + [Problems encountered](#problems-encountered)
 + [Deployment](#deployment)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
@@ -41,14 +42,14 @@ This is an outer space themed, flip card memory game. The game has been designed
   
 ***
 ***
-# User Experience
+# User Experience (UX)
 
 ## User Stories
 * The user should see a grid style game with cards on display - these cards will have a front and back image.
 * The user should only be able to click on two cards at a time, to try to find a matched pair.
 * The user should activate the timer once the first card has been flipped and when the second card has been flipped a move is logged.
 * The user should expect that once the game has been completed, the timer will stop.
-* The user should be receiving a message to confirm their win at the end of the game when all matched pairs have been found.  
+* The user should be receiving a message to confirm their win and score at the end of the game when all matched pairs have been found.  
 * The user should be able to close the pop up message at the end of the game with a click on the "x" button.
 * The user should have the option to reset the game at any time during play.
 * By playing this game the user should be able to test their memory skill in a fun environment.
@@ -268,25 +269,23 @@ The following devices were tested:
 - iPad Pro
 - Surface Duo
 
-## User stories Testing
-* Has a grid style game been displayed on page load? 
-  * Yes - works as expected.
-* Can the user only turn two cards at a time?
-  * Yes - works as expected.
-* Has the timer been activated once the first card has been flipped and when the second card has been flipped a move is logged?
-  * Yes - works as expected.
-* Does the timer stop when the game ends?
-  * Yes - works as expected.
-* Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
-  * Yes - works as expected.
-* Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
-  * Yes - works as expected.
-* Is the user able to close the pop up message at the end of the game with a click on the "x" button?
-  * Yes - works as expected.
-* Does the New Game button reset the game at any time during play.
-  * Yes - works as expected.
-* Is the users memory skill tested with this game?
-  * Yes - works as expected.
+## Testing User Stories from User Experience (UX) Section
+* The user should see a grid style game with cards on display - these cards will have a front and back image.
+    * Users are automatically greeted with a 4x4 grid style game with a game title and clear navigation buttons.
+* The user should only be able to click on two cards at a time, to try to find a matched pair.
+    * The user begins the game by flipping the first two cards. The user is not allowed to flip another card until the first two cards have been checked for a match. 
+* The user should activate the timer once the first card has been flipped and when the second card has been flipped a move is logged.
+    * Once the clicks on the first card the timer is activated.
+* The user should expect that once the game has been completed, the timer will stop.
+    * Once all matched cards have been flipped the timer stops.
+* The user should be receiving a message to confirm their win and score at the end of the game when all matched pairs have been found. 
+    * Once the game has been won the user receives their win confirmation via a pop up message and they can see their time and total number of moves taken. 
+* The user should be able to close the pop up message at the end of the game with a click on the "x" button.
+    * On completion of the game the pop up message can be closed and the game is reset for another game.
+* The user should have the option to reset the game at any time during play.
+    * At any time during the game the user can click the "Reset Game" button to return all the cards to face down and the timer and move counter are returned to zero. 
+* By playing this game the user should be able to test their memory skill in a fun environment.
+    * Through the use of colour and animation along no time constraints for possible younger users, the game allows for an enjoyable experience. 
 
 All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
 
@@ -297,7 +296,7 @@ Furthermore the game has been tested by my younger children whom are aged 5 and 
   * I fixed this issue by removing the bootstrap link from the head section of my html page and the modal appeared as expected.
 
 * The first function written, was the flip card function which is the main play function for the game. As this function interacts with many other functions, I ran into some issues when trying to add additional features, such as the timer and moves counter, which required the flipping of one card for the timer to begin and the flipping of a second card to have the move counter begin. Each time I added this function my flipcard function broke and the game and the cards would not flip when clicked.
-   * I fixed this issue by creating a test repo under my github account which allowed me to add and remove a number of options and test various functions together without breaking my existing main play function - it soon became clear that i was placing my call functions in the wrong place which inturn was breaking my game.
+   * I fixed this issue by creating a test repo under my github account which allowed me to add and remove a number of options and test various functions together without breaking my existing main play function - it soon became clear that i was placing my call functions in the wrong place which inturn was breaking my game. A link to my test repository can be found [here](https://github.com/moirahartigan/Test-Repo) 
 
 * When the game loaded the timer was starting on page load and not on the first click of a card.
   *  I fixed this by using the .onclick() event in the div for the timer. 
