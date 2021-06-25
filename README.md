@@ -157,14 +157,14 @@ A bright orange colour was chosen to highlight the buttons and this colour was m
 A "How To Play" modal was created to simply outline the the play instructions for the user should they wish to view them. This modal was styled in the same way as the win modal with a white background and a dark overlay to hide the game in the background. A call to action button was added here to direct the user to click it in order to play the game.
 
  <p align="center">  
-  <img src="">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/how-to-play-modal.png">
  </p>
  
  <br>
 
 ### <em>Win Modal</em>
 
-Similar in style to the instructions modal, the win message was created to be in with a brigtht white background in contrast with the dark background from the game screen. A dark overlay was again applied to hide the game in the background and a thumbs up image was included to consider younger users who may not be able to read the message.
+Similar in style to the "How To Play" modal, the win message was created again with a brigtht white background in contrast with the game board. A dark overlay was again applied to hide the game in the background and here the score is displayed for the user to see how many moves were made, and how much time was taken to complete the game. A thumbs up image was included to consider younger users who may not be able to read the message.
  
  <br>
  <br>
