@@ -138,7 +138,7 @@ body {
 
 .modal {
   /*Hidden by default */
-  display: none;
+  display: none; 
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 99;
@@ -195,9 +195,6 @@ p{
 /* for extra small devices */
 @media only screen and (max-width: 600px) { 
   .rules-card {
-    border: 0.5em solid #2376b9;
-    background-color: white;
-    border-radius: 20px;
     margin: 5px 15px 15px;
     padding: 0 25px 10px;
   }
@@ -245,6 +242,9 @@ p{
 .card-back {
   padding: 3px;
 }
+
+.hero-btn {
+  font-size: 15px;
 }
 
 /* media for larger screens */
@@ -269,10 +269,10 @@ p{
   }
   
   /* media for smaller desktop screens */
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
     .modal-content {
       padding: 20px;
-      margin: 100px 200px;
+      /* margin: 100px 200px; */
     }
     
     .modal-img {
@@ -283,14 +283,11 @@ p{
     .close {
       font-size: 2.5em;
       padding-bottom: 20px;
-    }    
+    } 
+    .hero-btn {
+      font-size: 15px;
     }
-
-.hero-btn {
-  font-size: 15px;
-}
-
-}
+    }
 
 @media (min-width: 1400px) {
   .modal {
@@ -310,20 +307,26 @@ p{
     font-size: 2.5em;
     padding-bottom: 20px;
   }
-  
+
+  .rules-card {  
+    margin: 100px 500px 100px;
+    padding: 50px;
+  } 
   }
   
   @media (min-width: 768px) { 
     .rules-card {  
       margin: 10px 50px 10px;
       padding: 50px;
-    } 
+    }
+  } 
 
-    @media (min-width: 1400px) { 
+    /* @media (min-width: 1400px) {  
       .rules-card {  
         margin: 100px 500px 100px;
         padding: 50px;
       } 
+    }*/
   
 /* 404 Error Page */
 
@@ -334,9 +337,6 @@ p{
   color: white;
 }
 
-#span{
+#span {
   color:#ff5100;
-}
-.page-wrap {
- min-height: 100vh;
 }

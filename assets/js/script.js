@@ -2,9 +2,10 @@
  * GENERAL VARIABLES
  */
 const cards = document.querySelectorAll('.memory-card');
-const moveContainer = document.querySelector(".moves")
+const moveContainer = document.querySelector(".moves");
 const modal = document.getElementById('modal');
 const timeContainer = document.querySelector(".timer");
+const MAX_MATCH = 8;
 
 let gameOn = false;
 let perfectMatch = 0;
@@ -45,14 +46,17 @@ function flipCard() {
 }
 
 /*
-ternary operator checking if firstCard & secondCard 'data-id' are a match
+checking if firstCard & secondCard 'data-id' are a match
 initial code taken form https://marina-ferreira.github.io/tutorials/js/memory-game/ and adapted
 */
 function checkCardMatch() {
     let isMatch = firstCard.dataset.image === secondCard.dataset.image;
     if (isMatch) perfectMatch += 1;
-    isMatch ? pairMatch() : noMatch();
-    if (perfectMatch === 8) winGame();
+
+    if (isMatch) pairMatch();
+    else noMatch();
+
+    if (perfectMatch === MAX_MATCH) winGame();
 }
 
 // matched cards will be disabled for clicks once they are flipped
