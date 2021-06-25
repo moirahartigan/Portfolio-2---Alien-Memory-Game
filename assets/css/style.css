@@ -162,6 +162,7 @@ body {
 
 p{
   font-size: 120%;
+  padding-bottom: 20px;
 }
 
 /* Modal Content Box */
@@ -190,19 +191,6 @@ p{
 
 .close:hover,
 .close:focus {
-  color: #5cf;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close-instructions {
-  align-self: flex-end;
-  color: #28e;
-  font-size: 5em;
-}
-
-.close-instructions:hover,
-.close-instructions:focus {
   color: #5cf;
   text-decoration: none;
   cursor: pointer;
@@ -242,8 +230,9 @@ p{
     width: 10em;
   }
 
-  p{
+  p {
     font-size: 16px;
+    padding-bottom: 20px
   }
   
 .close {
@@ -279,7 +268,7 @@ p{
 }
 
 .hero-btn {
-  font-size: 15px;
+  font-size: 14px;
 }
 }
 
