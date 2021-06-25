@@ -1,18 +1,24 @@
 # Alien Memory
+
+
 ## Portfolio Project 2: _Interactive Front-End Development_
-This is a flip card memory game.
+This is an outer space themed, flip card memory game. The game has been designed for users of any age to play and enjoy.
+
+
 ## Demo
 
 [View the Live Website Here](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
+<p align ="center"> 
+<img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/am-i-responsive.png">
+</p>
 
-<img src="">
 
 # Table of Contents
 + [User Experience](#user-experience)
   + [User Stories](#user-stories)
   + [Design](#design)
     + [Overall Feel](#overall-feel)
-    + [Color Scheme](#color-scheme)
+    + [Colour Scheme](#colour-scheme)
     + [Typography](#typography)   
   + [Wireframes](#wireframes)
 + [Features](#features)
@@ -24,6 +30,8 @@ This is a flip card memory game.
 + [Testing](#testing)
   + [Validator Testing](#validator-testing)
   + [Lighthouse Testing](#lighthouse-testing)
+  + [Responsiveness](#responsiveness)
+  + [Problems encountered](#problems-encountered)
 + [Deployment](#deployment)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
 + [Credits](#credits)
@@ -37,57 +45,122 @@ This is a flip card memory game.
 
 ## User Stories
 * The user should see a grid style game with cards on display - these cards will have a front and back image.
-* The user should be able to click any two cards which are facing down (not yet flipped) to flip over and try to find a matched pair.
+* The user should only be able to click on two cards at a time, to try to find a matched pair.
+* The user should activate the timer once the first card has been flipped and when the second card has been flipped a move is logged.
+* The user should expect that once the game has been completed, the timer will stop.
 * The user should be receiving a message to confirm their win at the end of the game when all matched pairs have been found.  
 * The user should be able to close the pop up message at the end of the game with a click on the "x" button.
-* The user should have the option to reset the game once completed, the cards will be shuffled and the user can and try to beat their previous time and number of moves taken on thier next try.
+* The user should have the option to reset the game at any time during play.
 * By playing this game the user should be able to test their memory skill in a fun environment.
+
 
 ## Design
 
-The goal of this project is to build a fun memory game where the user can replay as many times as they wish. The game is designed to target a user of any age from younger children who may just want to find the pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game.
+The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This can allow any player to track their time, without adding the pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
 
-The game layout has been kept simple using 16 cards which have been kept to a relatively small size so the game can still look the same in either desktop, tablet or mobile view without having to change the structure completely.
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-grid.png">
+ </p>
+ 
+<br>
+<br>
 
+The game layout has been kept simple, using a 4x4 style grid, with a total of 16 cards. The game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet or mobile view without changing the look of the game. 
+
+<br>
+
+#### <em>mobile</em>
+ <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/mobile%20responsive.png">
+ </p>
+
+
+#### <em>tablet</em>
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/tablet-responsiveness.png">
+ </p>
+ 
+ 
 ### Overall Feel 
 
-This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the color scheme was chosen mirror this feeling.
+This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the colour scheme was chosen to mirror this feeling.
+
+<br>
+<br>
+
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/background-screenshot.png">
  </p>
-Alien spaceships werre used as the card back image and each spaceship housed an ailen charactor which was viewed when the card was flipped. Each card was given a light blue border to enhance the appearence of the cards and make them stand out from the dark background.
+ 
+ <br>
+ 
+Alien spaceships are used as the card back image, and each spaceship houses an alien character, which is viewed when the card is flipped. The user gets to view the flipped card for 1 second, if its a match the cards stay turned and if not they are flipped back. Each card was given a light blue border to add color and enhance the appearance of the cards against the nights sky background.
+
+<br>
+<br>
+
 <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/card-front-screenshot.png">
  </p>
- The Alien charactors were selected to add additional colour to the game once the cards had been flipped.
+ 
+ <br>
+ <br>
+ 
+ The Alien characters were selected to add additional fun and colour to the game once the cards had been flipped. The images were croped to size for consistancy and ease of styling.
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-charactors.jpg">
  </p>
+
+<br>
+<br>
+
+ The win message was created to be in with a brigtht white background in contrast with the dark background from the game screen. A dark overlay was applied to hide the game in the background and a thumbs up image was included to consider younger users who may not be able to read the message.
  
- The win message was created to be in contrast with the dark background. A dark overlay was applied to hid the game in the background and a thumbs up image was included to consider younger users who may not be able to read the message.
+ <br>
+ <br>
+ 
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/win-modal.png">
  </p>
  
- Finally a blue "x" was added as a close button on the win message, to allow users to exit the screen and replay the game if they wished.
+ <br>
+ 
+ Finally a blue "x" was added as a close button on the win message, to allow users to exit the screen and replay the game if they wished. When the "x" is clicked the message dissapears and the game is reset to its starting position and ready for the next play.
+ 
+ <br>
  
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/close-button-screenshot.png">
  </p>
  
+<br>
 
-### Color Scheme
-The color scheme was chosen to tie in with the outer space theme.  
+### Colour Scheme
+The colour scheme was chosen to tie in with the outer space theme, as the background image is a dark sky, bright vibrant colours were selected to stand out in contract to the background.  
+<br>
+<br>
 <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/color-scheme.png">
  </p>
-A bright orange colour was chosen to highlight the replay button and this color was matched to the game title. were used for the replay button
+ 
+ <br>
+ 
+A bright orange colour was chosen to highlight the buttos and this colour was matched to the game title for consistancy.
+
+<br>
+<br>
 
 <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/new-game-button.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/nav%20buttons.png">
  </p>
  
+ <br>
+ <br>
+ 
  The timer and move counter were created using lighter colour so as not to distract the user too much from the game itself.
+ 
+ <br>
+ <br>
  
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/timer.png">           <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/moves-counter.png">
@@ -95,6 +168,10 @@ A bright orange colour was chosen to highlight the replay button and this color 
  
 ### Typography
 
+The font-families chosen are Permanent Marker and Roboto. I used Roboto on the instructions page text and the win message modal, as I felt this font complimented the perminant marker font and suited its purpose, on the informational messages.
+
+<br>
+<br>
 
 ## Wireframes
 
@@ -109,14 +186,17 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 # Features
 
 ## Current Features
-+ When a player starts a game, a displayed timer should also start and once the player wins the game, the timer stops.
-+ A restart button allows the user to reset the game board, the timer and the moves counter.
-+ A congratulations modal appears when the user wins the game and matches all 8 pairs.
++ Game instructions are available to the user by clicking the "How to Play" button.
++ When a player starts a game, a displayed stopwatch timer starts and once the player wins the game, the timer stops.
++ A moves tracker, counts each pair match attempt made, and starts the count when the second card had been flipped. 
++ A New Game button allows the user to reset the game board at any time during the game; the timer and the moves counter will return to 0.
++ A win message appears when the user wins the game and matches all 8 pairs.
+
 
 ## Future Features
-+ I would like to add different game levels to allow the user to choose an easy, medium or difficuly level of of play.
 + I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
 + I would like to add a mute button to allow the user to control the sound effects.
++ I would like to add a high score leader board to the game to allow the user to add their name and record the moves and time.
 
 ***
 ***
@@ -125,16 +205,18 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 
 ## Languages Used
 1. [HTML](https://en.wikipedia.org/wiki/HTML5) - To create a basic site.
-2. [CSS](https://en.wikipedia.org/wiki/CSS) - To create a nice style and to stand-out.
-3. [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - To improve responsiveness.
-4. [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - To make the game work.
+2. [CSS](https://en.wikipedia.org/wiki/CSS) - To create the look for the game.
+3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - For the logic of the game. To manipulate the HTML and CSS on the screen..
 
 ## Frameworks Libraries and Programmes Used
 * [Google Fonts](https://fonts.google.com/) - to import the font-family used in the website: Playfair Display and Courgette.
+* [Balsamiq Wireframes](https://balsamiq.com/wireframes/)- for creating Wireframes for initial visual development
+* [picresize](https://picresize.com/) - for editing images used for the game.
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
-* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - for performance review.
+* [Google Chrome Development Tools](https://developers.google.com/web/tools/chrome-devtools) - for testing code on various device sizes during development and debugging.
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - for testing code health, accessibility, speed and search engine optimisation..
 
 ***
 ***
@@ -146,13 +228,13 @@ At the completion or heavy editing of sections, I used the following to check my
 ### <em>HTML Validator</em>
 
   <p align="center">  
- <img src=""> 
+ <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/html-validator.png"> 
  </p>
   
 ### <em>CSS Validator</em>
 
   <p align="center">  
-  <img src="">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/css-validator.png">
  </p>
     
     
@@ -161,9 +243,61 @@ At the completion or heavy editing of sections, I used the following to check my
 ## Lighthouse Testing
 I used Chromes Lighthouse tools to test the site's performance. I made sure to check both desktop and mobile performances. Below are the screenshots from both tests:
 ### <em>lighthouse Mobile</em>
-![Mobile]()
+![Mobile](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/lighthouse-mobile.png)
 ### <em>lighthouse Desktop</em>
-![Desktop]()
+![Desktop](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/lighthouse-desktop.png)
+
+## Responsiveness
+Chrome DevTools was used to test the games responsivesness.
+
+
+The following devices were tested:
+- Moto 4
+- Galaxy S5
+- Pixel 2
+- Pixel 2 XL
+- iPhone 5/SE
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+- iPad Pro
+- Surface Duo
+- Galaxy Fold
+
+## User stories Testing
+* Has a grid style game been displayed on page load? 
+  * Yes - works as expected.
+* Can the user only turn two cards at a time?
+  * Yes - works as expected.
+* Has the timer been activated once the first card has been flipped and when the second card has been flipped a move is logged?
+  * Yes - works as expected.
+* Does the timer stop when the game ends?
+  * Yes - works as expected.
+* Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
+  * Yes - works as expected.
+* Does the user receiving a message to confirm their win at the end of the game when all matched pairs have been found.?
+  * Yes - works as expected.
+* Is the user able to close the pop up message at the end of the game with a click on the "x" button?
+  * Yes - works as expected.
+* Does the New Game button reset the game at any time during play.
+  * Yes - works as expected.
+* Is the users memory skill tested with this game?
+  * Yes - works as expected.
+
+All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
+
+Furthermore the game has been tested by my younger children whom are aged 5 and 6. They were able to play the game without instruction from an adult which was one of the core goals of the design. Other adult friends and family also tried the game on their personal devices to comfirm responsiveness but all reported to have enjoyed playing this game.
+
+## Problems Encountered
+* Initially I considered using bootstrap to create my win message modal, however I decided against this and built the modal in the html file using a simple content division element. Once I had completed this and added the display: none attribute to the css class, the modal failed to appear on the screen.
+  * I fixed this issue by removing the bootstrap link from the head section of my html page and the modal appeared as expected.
+
+* The first function written, was the flip card function which is the main play function for the game. As this function interacts with many other functions, I ran into some issues when trying to add additional features, such as the timer and moves counter, which required the flipping of one card for the timer to begin and the flipping of a second card to have the move counter begin. Each time I added this function my flipcard function broke and the game and the cards would not flip when clicked.
+   * I fixed this issue by creating a test repo under my github account which allowed me to add and remove a number of options and test various functions together without breaking my existing main play function - it soon became clear that i was placing my call functions in the wrong place which inturn was breaking my game.
+
+* When the game loaded the timer was starting on page load and not on the first click of a card.
+  *  I fixed this by using the .onclick() event in the div for the timer. 
 
 ***
 ***
@@ -183,22 +317,22 @@ This site was deployed through GitHub Pages using the following steps:
 ***
 # Credits
 ## Code
-* The Code Institute material was the main source of information used to create this project.
+* [free Code Camp](https://marina-ferreira.github.io/tutorials/js/memory-game/) this tutorial was followed and some JavaScript code was taken and adapted to my game.
+* [scotch](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) inspiration was also taken from this tutorial for the timer function.
+* [youtube](https://www.youtube.com/watch?v=28VfzEiJgy4) inspiration was taken from this tutorial.
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
 * [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) was used as a general source of knowledge.
-* [youtube](https://www.youtube.com/watch?v=44axq8Absis) This tutorial was used to learn how to achieve a transparent navigation bar.
 * [Stack Overflow](https://stackoverflow.com/) was used to assist during debugging.
 * [github docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) was used to create the 404 page.
 
 ## Media
-* Images were sourced from the following:
-    * [unsplash](https://unsplash.com)
-    * [pexels](https://www.pexels.com)
-    * [pixabay](https://pixabay.com/)
-
+* Animated Alien images were cropped from this image from freepik.com
+    * [freepik](https://www.freepik.com/free-vector/monsters-set-cartoon-cute-character-isolated-white-background_13031453.htm#page=1&query=alien&position=10)
+  
 ## Acknowledgements
 * I would like to thank the Slack Community for their endless support.
 * I would like to thank Kasia Bogucka our class cohort facilitator for her constant assistance and encouragement.
+* I would like to thank my children for testing the game and my husband for his support and allowing me some child free time to work on this project.
 * Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this portfolio project.
  
 

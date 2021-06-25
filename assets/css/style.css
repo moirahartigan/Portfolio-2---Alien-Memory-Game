@@ -110,6 +110,30 @@ body {
   transition: 1s;
 }
 
+/* How to play instructions */
+.rules-card {
+  font-family: 'Roboto', sans-serif;
+  border: 0.8em solid #2376b9;
+  background-color: white;
+  border-radius: 20px;
+  margin: 100px 500px 100px;
+  padding: 500px;
+  justify-content: center;
+  }
+
+.rules-list {
+  font-weight: 600;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.rules-list li {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 25px;
+  color: black;
+  text-align: center;
+}
+
 /* game-over modal */
 
 .modal {
@@ -170,9 +194,18 @@ p{
 /* Media Queries */
 /* for extra small devices */
 @media only screen and (max-width: 600px) { 
+  .rules-card {
+    border: 0.5em solid #2376b9;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px 15px 15px;
+    padding: 0 25px 10px;
+  }
+
   .modal-content {
     margin: 80px 40px;
   }
+
   .modal-img {
     width: 10em;
   }
@@ -187,7 +220,7 @@ p{
 }
 
 .page-title {
-  margin: 20px;
+  margin: 10px;
   font-size: 2.5em;
 }
 
@@ -253,46 +286,57 @@ p{
     }    
     }
 
-    @media (min-width: 1400px) {
-      .modal {
-          padding: 0 350px;   
-      }
-      
-      .modal-content {
-        padding: 20px;
-      }
-      
-      .modal-img {
-        margin: 1em 0 1em;
-        width: 10em;
-      }
-      
-      .close {
-        font-size: 2.5em;
-        padding-bottom: 20px;
-      }
-      
-      }
-      
-      @media (min-width: 780px) {
-        .modal {
-            /* padding: 0 200px; 
-            margin: 100px;   */
-        }
-        
-        .modal-content {
-          padding: 20px;
-          margin: 100px 200px;
-        }
-        
-        .modal-img {
-          margin: 1em 0 1em;
-          width: 10em;
-        }
-        
-        .close {
-          font-size: 2.5em;
-          padding-bottom: 20px;
-        }
-        
-        }
+.hero-btn {
+  font-size: 15px;
+}
+
+}
+
+@media (min-width: 1400px) {
+  .modal {
+      padding: 0 350px;   
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-img {
+    margin: 1em 0 1em;
+    width: 10em;
+  }
+  
+  .close {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+  }
+  
+  }
+  
+  @media (min-width: 768px) { 
+    .rules-card {  
+      margin: 10px 50px 10px;
+      padding: 50px;
+    } 
+
+    @media (min-width: 1400px) { 
+      .rules-card {  
+        margin: 100px 500px 100px;
+        padding: 50px;
+      } 
+  
+/* 404 Error Page */
+
+.error {
+  background-image: url('../images/background-sky.jpg'); 
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+
+#span{
+  color:#ff5100;
+}
+.page-wrap {
+ min-height: 100vh;
+}
