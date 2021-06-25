@@ -17,12 +17,11 @@ This is an outer space themed, flip card memory game. The game has been designed
 + [User Experience](#user-experience)
   + [User Stories](#user-stories)
   + [Design](#design)
-    + [Overall Feel](#overall-feel)
     + [Colour Scheme](#colour-scheme)
     + [Typography](#typography)   
   + [Wireframes](#wireframes)
 + [Features](#features)
-  + [Current Features](#current-features)
+  + [Existing Features](#existing-features)
   + [Future Features](#future-features)
 + [Technologies Used](#technologies-used)
   + [Languages Used](#languages-used)
@@ -57,7 +56,41 @@ This is an outer space themed, flip card memory game. The game has been designed
 
 ## Design
 
-The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This can allow any player to track their time, without adding the pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
+The goal of this project is to build a fun interactive memory game where the user can replay as many times as they wish. The game has been designed to target a user of any age; from younger children, who may just want to find the matching pair regardless of time and moves taken, right up to adults, who may wish to challenge themselves and attempt to beat their own time and moves taken on each game. For this reason a stopwatch timer was used. The timer counts up the time but there is no time limit applied. This will allow any player to track their time, without the added pressure of the game ending too quickly for perhaps a younger player, who may run out of time.
+
+#### Colour Scheme
+The colour scheme was chosen to tie in with the outer space theme, bright vibrant colours were selected to stand out in contract to the background but not to distract the play from the game itself.  
+<br>
+<br>
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/color-scheme.png">
+ </p>
+ 
+ #### Typography
+
+The font-families chosen are Permanent Marker and Roboto. The Permanent Marker font gave a relaxed playful feel to the game and as it was the only text on the game page other than the buttons, I wanted the look to be soft. Roboto was used on the instructions page text and the win message modal, as I felt this font complimented the perminant marker font and suited its purpose, on the informational messages.
+
+<br>
+
+## Wireframes
+
+All Wireframes were designed for laptop/computer, iPad/tablet and phone display. 
+
+[Wireframe for Tablet & Mobile- Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-mobile%26tablet.png)    
+[Wireframe for Tablet & Mobile- Win Game message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-mobile%26tablet-win-game.png)  
+[Wireframe for Desktop - Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-desktop.png)
+[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-win-game-desktop.png) 
+***
+***
+
+# Features
+
+## Current Features
+
+### <em>Game Grid</em>
+The game layout has been kept simple, using a 4x4 style grid, with a total of 16 cards. I felt that this number of cards was the most suitable in order to keep the game responsive for smaller devices. 
+
+<br>
 
 <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/game-grid.png">
@@ -66,29 +99,7 @@ The goal of this project is to build a fun interactive memory game where the use
 <br>
 <br>
 
-The game layout has been kept simple, using a 4x4 style grid, with a total of 16 cards. The game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet or mobile view without changing the look of the game. 
-
-<br>
-
-#### <em>mobile</em>
- <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/mobile%20responsive.png">
- </p>
-
-
-#### <em>tablet</em>
-<p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/tablet-responsiveness.png">
- </p>
- 
- #### <em>tablet - landscape view </em>
-<p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/tablet-landscape.png">
- </p>
- 
-### Overall Feel 
-
-This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the colour scheme was chosen to mirror this feeling.
+The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the colour scheme was chosen to mirror this feeling.
 
 <br>
 <br>
@@ -99,7 +110,7 @@ This memory game has been designed to challenge the user within a fun environmen
  
  <br>
  
-Alien spaceships are used as the card back image, and each spaceship houses an alien character, which is viewed when the card is flipped. The user gets to view the flipped card for 1 second, if its a match the cards stay turned and if not they are flipped back. Each card was given a light blue border to add color and enhance the appearance of the cards against the nights sky background.
+Alien spaceships are used as the card back image, and each spaceship houses an alien character, which is viewed when the card is flipped. The user gets to view the flipped card for just less than a second, if its a match the cards stay turned and if not they are flipped back. Each card was given a light blue border to add color and enhance the appearance of the cards against the nights sky background.
 
 <br>
 <br>
@@ -119,7 +130,41 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
 <br>
 <br>
 
- The win message was created to be in with a brigtht white background in contrast with the dark background from the game screen. A dark overlay was applied to hide the game in the background and a thumbs up image was included to consider younger users who may not be able to read the message.
+### <em>Game Information</em>
+
+The game timer is activated once the user flipps the first card and the moves tracker, counts each pair match attempt made, the counter starts the count when the second card had been flipped. The timer and move counter were created using lighter colour so as not to distract the user too much from the game itself. 
+ 
+ <br>
+ <br>
+ 
+ <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/game-info.png">
+ </p>
+
+### <em>Navigation buttons</em>
+
+A bright orange colour was chosen to highlight the buttons and this colour was matched to the game title for consistancy.
+
+<br>
+<br>
+
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/nav%20buttons.png">
+ </p>
+ 
+### <em>How To Play Modal </em> 
+
+A "How To Play" modal was created to simply outline the the play instructions for the user should they wish to view them. This modal was styled in the same way as the win modal with a white background and a dark overlay to hide the game in the background. A call to action button was added here to direct the user to click it in order to play the game.
+
+ <p align="center">  
+  <img src="">
+ </p>
+ 
+ <br>
+
+### <em>Win Modal</em>
+
+Similar in style to the instructions modal, the win message was created to be in with a brigtht white background in contrast with the dark background from the game screen. A dark overlay was again applied to hide the game in the background and a thumbs up image was included to consider younger users who may not be able to read the message.
  
  <br>
  <br>
@@ -129,68 +174,39 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
  </p>
  
  <br>
+
+A blue "x" was added as a close button on the win message, to allow users to exit the screen and replay the game if they wished. When the "x" is clicked the message dissapears and the game is reset to its starting position and ready for the next play.
  
- Finally a blue "x" was added as a close button on the win message, to allow users to exit the screen and replay the game if they wished. When the "x" is clicked the message dissapears and the game is reset to its starting position and ready for the next play.
- 
- <br>
+<br>
  
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/close-button-screenshot.png">
  </p>
  
 <br>
+ 
 
-### Colour Scheme
-The colour scheme was chosen to tie in with the outer space theme, as the background image is a dark sky, bright vibrant colours were selected to stand out in contract to the background.  
-<br>
-<br>
-<p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/color-scheme.png">
- </p>
- 
- <br>
- 
-A bright orange colour was chosen to highlight the buttos and this colour was matched to the game title for consistancy.
+### <em>Responsive Design</em>
 
-<br>
-<br>
+As this is a game and most likely to be played on mobile devices, the game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet, tablet landscape view or mobile view without changing the look of the game. 
 
-<p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/nav%20buttons.png">
- </p>
- 
- <br>
- <br>
- 
- The timer and move counter were created using lighter colour so as not to distract the user too much from the game itself.
- 
- <br>
- <br>
- 
+#### <em>mobile</em>
  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/game-info.png">
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/mobile%20responsive.png">
+ </p>
+
+
+#### <em>tablet</em>
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/tablet-responsiveness.png">
  </p>
  
-### Typography
+ #### <em>tablet - landscape view </em>
+<p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/tablet-landscape.png">
+ </p>
 
-The font-families chosen are Permanent Marker and Roboto. I used Roboto on the instructions page text and the win message modal, as I felt this font complimented the perminant marker font and suited its purpose, on the informational messages.
 
-<br>
-<br>
-
-## Wireframes
-
-All Wireframes were designed for laptop/computer, iPad/tablet and phone display. 
-
-[Wireframe for Tablet & Mobile- Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-mobile%26tablet.png)    
-[Wireframe for Tablet & Mobile- Win Game message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-mobile%26tablet-win-game.png)  
-[Wireframe for Desktop - Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-desktop.png)
-[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-win-game-desktop.png) 
-***
-***
-# Features
-
-## Current Features
 + Game instructions are available to the user by clicking the "How to Play" button.
 + When a player starts a game, a displayed stopwatch timer starts and once the player wins the game, the timer stops.
 + A moves tracker, counts each pair match attempt made, and starts the count when the second card had been flipped. 
@@ -198,6 +214,16 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + A win message appears when the user wins the game and matches all 8 pairs.
 
 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ## Future Features
 + I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
 + I would like to add a mute button to allow the user to control the sound effects.
