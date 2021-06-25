@@ -3,11 +3,12 @@
  */
 const cards = document.querySelectorAll('.memory-card');
 const moveContainer = document.querySelector(".moves");
-
+const instructions = document.getElementById('instructions');
 const modal = document.getElementById('modal');
 const timeContainer = document.querySelector(".timer");
 const MAX_MATCH = 8;
-
+const modalBtn = document.getElementById("modalBtn");
+const closeBtn = document.getElementById("closeBtn");
 
 let gameOn = false;
 let perfectMatch = 0;
@@ -16,15 +17,9 @@ let lockBoard = false; // used to lock the board until each set of cards are fin
 let firstCard, secondCard; //Used to check for cards match
 let moves = 0;
 
-
-
+// listen for card flips
 cards.forEach(card => card.addEventListener('click', flipCard));
 shuffle();
-
-const instructions = document.getElementById('instructions');
-let modalBtn = document.getElementById("modalBtn");
-let closeBtn = document.getElementById("closeBtn");
-
 
 // listen for open click of how to play instructions modal
 modalBtn.addEventListener('click', showInstructions);
@@ -40,7 +35,6 @@ function showInstructions() {
 function closeInstructions() {
     instructions.style.display = "none";  
 }
-
 
 /*
 onclick function for cards, add flip class for css effects
@@ -121,7 +115,7 @@ let time;
 let minutes = 0;
 let seconds = 0;
 let timeStart = false;
-timeContainer.innerHTML = "Timer " + minutes + " : " + seconds;
+timeContainer.innerHTML = "Time " + minutes + " : " + seconds;
 
 function timer() {
     time = setInterval(function () {
@@ -130,7 +124,7 @@ function timer() {
         minutes++;
         seconds = 0;
     }
-    timeContainer.innerHTML = "Timer " + minutes + " : " + seconds;
+    timeContainer.innerHTML = "Time " + minutes + " : " + seconds;
   }, 1000);
 }
 
@@ -154,10 +148,14 @@ function winGame() {
 // Win message pop up 
 function showWinMessage() {
     modal.style.display = "block";
+    finalTime = timeContainer.innerHTML;
+    // showing moves and time on modal
+    document.getElementById("finalMove").innerHTML = moves;
+    document.getElementById("totalTime").innerHTML = finalTime;
     reset();
   
-}
 
+}
 // when the user clicks the (x) To close modal
 window.onclick = function (event) {
     if (event.target.id == 'close') {
