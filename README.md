@@ -83,7 +83,7 @@ The game layout has been kept simple, using a 4x4 style grid, with a total of 16
  
 ### Overall Feel 
 
-This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the colour scheme was chosen mirror this feeling.
+This memory game has been designed to challenge the user within a fun environment. The outer space theme has been used to allow the game to appeal to any age group and it is gender neutral and therefore suitable for anyone to enjoy playing. As the theme is "outer space" - A background of stars in the sky was chosen to give the feeling of being in space and the colour scheme was chosen to mirror this feeling.
 
 <br>
 <br>
@@ -94,7 +94,7 @@ This memory game has been designed to challenge the user within a fun environmen
  
  <br>
  
-Alien spaceships were used as the card back image and each spaceship housed an alien character which was viewed when the card was flipped. Each card was given a light blue border to enhance the appearance of the cards and make them stand out from the dark background.
+Alien spaceships are used as the card back image, and each spaceship houses an alien character, which is viewed when the card is flipped. The user gets to view the flipped card for 1 second, if its a match the cards stay turned and if not they are flipped back. Each card was given a light blue border to add color and enhance the appearance of the cards against the nights sky background.
 
 <br>
 <br>
@@ -106,7 +106,7 @@ Alien spaceships were used as the card back image and each spaceship housed an a
  <br>
  <br>
  
- The Alien characters were selected to add additional colour to the game once the cards had been flipped.
+ The Alien characters were selected to add additional fun and colour to the game once the cards had been flipped. The images were croped to size for consistancy and ease of styling.
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/readme/game-charactors.jpg">
  </p>
@@ -210,8 +210,8 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 
 ## Frameworks Libraries and Programmes Used
 * [Google Fonts](https://fonts.google.com/) - to import the font-family used in the website: Playfair Display and Courgette.
-* [jQuery](https://en.wikipedia.org/wiki/JQuery)- to manipulate the HTML and CSS on the screen.
 * [Balsamiq Wireframes](https://balsamiq.com/wireframes/)- for creating Wireframes for initial visual development
+* [picresize](https://picresize.com/) - for editing images used for the game.
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
