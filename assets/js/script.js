@@ -16,22 +16,20 @@ let flippedCard = false; //used to check if card has already been clicked
 let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
 let firstCard, secondCard; //Used to check for cards match
 let moves = 0;
+let finalTime = "";
 
-// listen for card flips
-cards.forEach(card => card.addEventListener('click', flipCard));
+//events
+cards.forEach(card => card.addEventListener('click', flipCard));// listen for card flips
 shuffle();
 
-// listen for open click of how to play instructions modal
-modalBtn.addEventListener('click', showInstructions);
-// close instructions button
-closeBtn.addEventListener('click', closeInstructions);
+modalBtn.addEventListener('click', showInstructions);// listen for open click of how to play instructions modal
+closeBtn.addEventListener('click', closeInstructions);// listen for close instructions button
 
 
 function showInstructions() {
     instructions.style.display = "block";    
     }
 
-// when the user clicks the (x) To close instructions-modal
 function closeInstructions() {
     instructions.style.display = "none";  
 }
@@ -95,7 +93,7 @@ function noMatch() {
         secondCard.classList.remove('flip');
 
         resetBoard();
-  },  1000);
+  },  900);
 
 // Add move
     addMove();
