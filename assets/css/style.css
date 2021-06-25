@@ -10,7 +10,7 @@
 
 html {
   min-height: 100vh;
-  }
+}
 
 body {
   margin: 0;
@@ -22,7 +22,7 @@ body {
   font-family: 'Permanent Marker', cursive;
   font-weight: normal;
   text-align: center;
-  font-size: 6em;
+  font-size: 25px;
 }
 
 /* https://stackoverflow.com/questions/47319464/make-a-grid-column-span-the-entire-row */
@@ -30,31 +30,33 @@ body {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 10px;
 }
 
 .game-info {
   color: #FFBB89;
-  font-size: 2em;
+  font-size: 25px;
 }
 
 .game-container {
-  margin: 50px auto;
+  margin: 5px 0 10px;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-gap: 5px;
   justify-content: center;
-  perspective: 1000px; /* to create a 3D flip effect -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
-  
+  perspective: 1000px;
+  /* to create a 3D flip effect -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+
 }
 
 .memory-card {
   position: relative;
   cursor: pointer;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   transform: scale(1);
-  transform-style: preserve-3d;/* to position the cards in the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+  transform-style: preserve-3d;
+  /* to position the cards in the 3d space created -adapted from https://marina-ferreira.github.io/tutorials/js/memory-game/ */
   transition: transform .5s;
 }
 
@@ -75,10 +77,10 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding: 3px;
   background: #2376b9;
   border-radius: 12px;
-  border-width: 1px;
+  border-width: .2px;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
   backface-visibility: hidden;
@@ -94,7 +96,7 @@ body {
   color: #fff;
   border: 1px solid #ff5100;
   padding: 12px 34px;
-  font-size: 20px;
+  font-size: 14px;
   background: #ff5100;
   position: relative;
   cursor: pointer;
@@ -113,7 +115,7 @@ body {
 /* How to play instructions */
 
 .instructions {
-  display:none;
+  display: none;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 99;
@@ -123,7 +125,7 @@ body {
   height: 100%;
 }
 
-.rules-card {   
+.rules-card {
   font-family: 'Roboto', sans-serif;
   border: 0.8em solid #2376b9;
   background-color: white;
@@ -131,7 +133,7 @@ body {
   margin: 100px 500px 100px;
   padding: 500px;
   justify-content: center;
-  }
+}
 
 .rules-list {
   font-weight: 600;
@@ -160,7 +162,7 @@ body {
   height: 100%;
 }
 
-p{
+p {
   font-size: 120%;
   padding-bottom: 20px;
 }
@@ -174,7 +176,7 @@ p{
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  margin: 200px 150px;
+  margin: 20px 150px;
   border: 0.8em solid #2376b9;
   padding: 20px 40px;
   border-radius: 20px;
@@ -186,7 +188,7 @@ p{
 .close {
   align-self: flex-end;
   color: #28e;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .close:hover,
@@ -201,7 +203,7 @@ p{
 .modal-img {
   display: inline-block;
   margin: 1em 0 1em;
-  width: 20em;
+  width: 15em;
 }
 
 
@@ -211,7 +213,7 @@ p{
   .instructions-modal {
     margin: 0;
   }
-  
+
   .rules-card {
     margin: 5px 15px 15px;
     padding: 0 20px 10px;
@@ -234,88 +236,137 @@ p{
     font-size: 16px;
     padding-bottom: 20px
   }
-  
-.close {
-  font-size: 2.5em;
-  padding-bottom: 20px;
-}
 
-.page-title {
-  margin: 10px;
-  font-size: 2.5em;
-}
-
-.game-info-container {
-  padding: 0 15px;
-  font-size: 10px;
+  .close {
+    font-size: 2.5em;
+    padding-bottom: 20px;
   }
 
-.game-container {
-  display: grid;
-  width: 100vw;
-  grid-gap: 5px;
+  .page-title {
+    margin: 10px;
+    font-size: 2.5em;
+  }
+
+  .game-info-container {
+    padding: 0 15px;
+    font-size: 10px;
+  }
+
+  .game-info {
+    font-size: 2em;
+  }
+
+  .game-container {
+    width: 100vw;
+    grid-gap: 5px;
+    margin: 50px auto;
+  }
+
+  .memory-card {
+    height: 70px;
+    width: 70px;
+  }
+
+  .card-front,
+  .card-back {
+    padding: 3px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+  }
 }
 
- .memory-card { 
-  height: 70px;
-  width: 70px;
-  text-align: center;
-}
+/* tablet size */
+@media (min-width: 768px) {
+  .game-container {
+    margin: 10px 0 40px;
+  }
 
-.card-front,
-.card-back {
-  padding: 3px;
-}
+  .page-title {
+    font-size: 4em;
+    margin: 40px 20px;
+  }
 
-.hero-btn {
-  font-size: 14px;
-}
+  .rules-card {
+    margin: 10px 50px 10px;
+    padding: 50px;
+  }
 }
 
 /* media for larger screens */
 @media (min-width: 1400px) {
-  .modal {
-      padding: 0 350px;   
+  .page-title {
+    margin: 10px;
+    font-size: 6em;
   }
-  
+
+  .game-info-container {
+    padding: 0 20px;
+  }
+
+  .game-container {
+    margin: 50px 0 50px;
+  }
+
+  .game-info {
+    color: #FFBB89;
+    font-size: 2em;
+  }
+
+  .memory-card {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-front,
+  .card-back {
+    padding: 5px;
+    border-width: 1px;
+  }
+
+  .hero-btn {
+    padding: 12px 34px;
+    font-size: 20px;
+  }
+
+  .modal {
+    padding: 0 350px;
+  }
+
   .modal-content {
     padding: 20px;
   }
-  
+
   .modal-img {
     margin: 1em 0 1em;
     width: 10em;
   }
-  
+
   .close {
     font-size: 2.5em;
     padding-bottom: 20px;
-  }  
+  }
 
-  .rules-card {  
+  .rules-card {
     margin: 100px 500px 100px;
     padding: 50px;
-  } 
   }
-  
-  @media (min-width: 768px) { 
-    .rules-card {  
-      margin: 10px 50px 10px;
-      padding: 50px;
-    }
-  } 
+}
 
 
-  
+
+
+
 /* 404 Error Page */
 
 .error {
-  background-image: url('../images/background-sky.jpg'); 
+  background-image: url('../images/background-sky.jpg');
   background-position: center center;
   background-size: cover;
   color: white;
 }
 
 #span {
-  color:#ff5100;
+  color: #ff5100;
 }
