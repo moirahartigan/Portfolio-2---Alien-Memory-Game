@@ -76,10 +76,11 @@ The font-families chosen are Permanent Marker and Roboto. The Permanent Marker f
 
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display. 
 
-[Wireframe for Tablet & Mobile- Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-mobile%26tablet.png)    
+[Wireframe for Tablet & Mobile- Game Grid](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-mobile%26tablet.png)    
 [Wireframe for Tablet & Mobile- Win Game message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-mobile%26tablet-win-game.png)  
-[Wireframe for Desktop - Game View](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-desktop.png)
-[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-win-game-desktop.png) 
+[Wireframe for Desktop - Game Grid](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-game-desktop.png)
+[Wireframe for Desktop - Win Game Message](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/wireframes/wireframe-win-game-desktop.png)
+
 ***
 ***
 
@@ -132,7 +133,7 @@ Alien spaceships are used as the card back image, and each spaceship houses an a
 
 ### <em>Game Information</em>
 
-The game timer is activated once the user flipps the first card and the moves tracker, counts each pair match attempt made, the counter starts the count when the second card had been flipped. The timer and move counter were created using lighter colour so as not to distract the user too much from the game itself. 
+The game timer is activated once the user flips the first card. The moves tracker counts each match attempt made, the counter starts the count when the second card had been flipped. The timer and move counter were created using lighter colour so as not to distract the user too much from the game itself. 
  
  <br>
  <br>
@@ -143,7 +144,7 @@ The game timer is activated once the user flipps the first card and the moves tr
 
 ### <em>Navigation buttons</em>
 
-A bright orange colour was chosen to highlight the buttons and this colour was matched to the game title for consistancy.
+A bright orange colour was chosen to highlight the buttons and this colour was matched to the game title for consistancy. The addition of a "How to play" button was not originally planned for this game. However, once I had completed the game, I felt an additional button beside the game reset button, would allow for a more positive user experience, if the user had the option to see the game instructions.
 
 <br>
 <br>
@@ -154,7 +155,7 @@ A bright orange colour was chosen to highlight the buttons and this colour was m
  
 ### <em>How To Play Modal </em> 
 
-A "How To Play" modal was created to simply outline the the play instructions for the user should they wish to view them. This modal was styled in the same way as the win modal with a white background and a dark overlay to hide the game in the background. A call to action button was added here to direct the user to click it in order to play the game.
+As mentioned above this feature, of game instructions, was not originally factored into the design, however I felt it had a benefit and a "How To Play" modal was created to simply outline the the play instructions for the user should they wish to view them. This modal was styled in the same way as the win modal with a white background and a dark overlay to hide the game in the background. A call to action button was added here to direct the user to click it, in order to play the game.
 
  <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/how-to-play-modal.png">
@@ -164,7 +165,7 @@ A "How To Play" modal was created to simply outline the the play instructions fo
 
 ### <em>Win Modal</em>
 
-Similar in style to the "How To Play" modal, the win message was created again with a brigtht white background in contrast with the game board. A dark overlay was again applied to hide the game in the background and here the score is displayed for the user to see how many moves were made, and how much time was taken to complete the game. A thumbs up image was included to consider younger users who may not be able to read the message.
+Similar in style to the "How To Play" modal, the win message was created again with a bright white background in contrast with the game board. A dark overlay was again applied to hide the game in the background and here the score is displayed for the user to see how many moves were made, and how much time was taken to complete the game. A thumbs up image was included to consider younger users who may not be able to read the message.
  
  <br>
  <br>
@@ -188,7 +189,7 @@ A blue "x" was added as a close button on the win message, to allow users to exi
 
 ### <em>Responsive Design</em>
 
-As this is a game and most likely to be played on mobile devices, the game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet, tablet landscape view or mobile view without changing the look of the game. 
+As this is a game, and most likely to be played on mobile devices, the game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet, tablet landscape view or mobile view without changing the look of the game. Consideration was given to as many devices as possible.
 
 #### <em>mobile</em>
  <p align="center">  
@@ -224,12 +225,14 @@ As this is a game and most likely to be played on mobile devices, the game has b
 
 ## Frameworks Libraries and Programmes Used
 * [Google Fonts](https://fonts.google.com/) - to import the font-family used in the website: Playfair Display and Courgette.
-* [Balsamiq Wireframes](https://balsamiq.com/wireframes/)- for creating Wireframes for initial visual development
+* [Balsamiq Wireframes](https://balsamiq.com/wireframes/) - for creating Wireframes for initial visual development.
+* [Coolors](https://coolors.co/) - to create the colour scheme.
 * [picresize](https://picresize.com/) - for editing images used for the game.
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
 * [Google Chrome Development Tools](https://developers.google.com/web/tools/chrome-devtools) - for testing code on various device sizes during development and debugging.
+* [Beautify Tools](https://beautifytools.com/javascript-validator.php) - used to beautify JavaScript code.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse) - for testing code health, accessibility, speed and search engine optimisation..
 
 ***
@@ -250,7 +253,8 @@ At the completion or heavy editing of sections, I used the following to check my
   <p align="center">  
   <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/css-validator.png">
  </p>
-    
+ 
+ The JavaScript code was run through Beautify Tools to not only beaufify the code but also to check for any syntax errors.
     
 * All pages came back with no errors.
  
@@ -263,7 +267,6 @@ I used Chromes Lighthouse tools to test the site's performance. I made sure to c
 
 ## Responsiveness
 Chrome DevTools was used to test the games responsivesness.
-
 
 The following devices were tested:
 - Moto 4
@@ -298,10 +301,10 @@ The following devices were tested:
 
 All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
 
-Furthermore the game has been tested by my younger children whom are aged 5 and 6. They were able to play the game without instruction from an adult which was one of the core goals of the design. Other adult friends and family also tried the game on their personal devices to comfirm responsiveness but all reported to have enjoyed playing this game.
+Furthermore the game has been tested by my younger children whom are aged 5 and 6. They were able to play the game without instruction from an adult which was one of the core goals of the design in terms of accessability for younger players. Other adult friends and family also tried the game on their personal devices to comfirm responsiveness and all reported to have enjoyed playing the game.
 
 ## Problems Encountered
-* Initially I considered using bootstrap to create my win message modal, however I decided against this and built the modal in the html file using a simple content division element. Once I had completed this and added the display: none attribute to the css class, the modal failed to appear on the screen.
+* Initially I considered using bootstrap to create my win message modal, however I decided against this, as I have yet to cover this topic on my course work so instead I built the modal in the html file using a simple content division element. Once I had completed this and added the display: none attribute to the css class, the modal failed to appear on the screen.
   * I fixed this issue by removing the bootstrap link from the head section of my html page and the modal appeared as expected.
 
 * The first function written, was the flip card function which is the main play function for the game. As this function interacts with many other functions, I ran into some issues when trying to add additional features, such as the timer and moves counter, which required the flipping of one card for the timer to begin and the flipping of a second card to have the move counter begin. Each time I added this function my flipcard function broke and the game and the cards would not flip when clicked.
@@ -337,7 +340,7 @@ This site was deployed through GitHub Pages using the following steps:
 * [github docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) was used to create the 404 page.
 
 ## Media
-* Animated Alien images were cropped from this image from freepik.com
+* Animated Alien images were cropped from this image from freepik.com.
     * [freepik](https://www.freepik.com/free-vector/monsters-set-cartoon-cute-character-isolated-white-background_13031453.htm#page=1&query=alien&position=10)
   
 ## Acknowledgements
